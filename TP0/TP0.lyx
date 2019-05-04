@@ -1,0 +1,2121 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{palatino}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style swiss
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Matemáticas para Ciencias de los Datos: 
+\end_layout
+
+\begin_layout Title
+Trabajo práctico 0
+\end_layout
+
+\begin_layout Author
+María y Felipe 
+\begin_inset Newline newline
+\end_inset
+
+Programa de Ciencias de los Datos, 
+\begin_inset Newline newline
+\end_inset
+
+Fundatec,
+\begin_inset Newline newline
+\end_inset
+
+Instituto Tecnológico de Costa Rica,
+\end_layout
+
+\begin_layout Abstract
+El presente documento contiene los ejercicios resueltos del Trabajo práctico
+ 0 asignado por el profesor Saúl Calderon y son parte de los materiales
+ del curso introductorio del Programa de Ciencias de los Datos.
+\end_layout
+
+\begin_layout Section
+Sistemas lineales (20 puntos)
+\end_layout
+
+\begin_layout Enumerate
+Demuestre si los siguientes sistemas 
+\begin_inset Formula $L\left\{ u(t)\right\} $
+\end_inset
+
+ (con entrada 
+\begin_inset Formula $u(t)$
+\end_inset
+
+ y salida 
+\begin_inset Formula $g(t)=L\left\{ u(t)\right\} $
+\end_inset
+
+, y 
+\begin_inset Formula $h(t)$
+\end_inset
+
+ una función cualquiera) son lineales o no lineales: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $g\left(t\right)=u(t)+2$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Se tiene que: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $L\left\{ \alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t)\right\} =\alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t)+2$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\neq\alpha_{1}L\left\{ u_{1}(t)\right\} +\alpha_{2}L\left\{ u_{2}(t)\right\} =\alpha_{1}(u_{1}(t)+2)+\alpha_{2}(u_{2}(t)+2)=\alpha_{1}u_{1}(t)+\alpha_{1}2+\alpha_{2}u_{2}(t)+\alpha_{2}2$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+por lo tanto el sistema no es lineal.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $g\left(t\right)=u(t)h(t)\,$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Se tiene que:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $L\left\{ \alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t)\right\} =(\alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t))h(t)=\alpha_{1}u_{1}(t)h(t)+\alpha_{2}u_{2}(t)h(t)$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $=\alpha_{1}L\left\{ u_{1}(t)\right\} +\alpha_{2}L\left\{ u_{2}(t)\right\} =\alpha_{1}(u_{1}(t)h(t))+\alpha_{2}(u_{2}(t)h(t))=\alpha_{1}u_{1}(t)h(t)+\alpha_{2}u_{2}(t)h(t)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+por lo tanto el sistema es lineal.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\left(t\right)=máx(u(t))\,$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Se tiene que:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $L\left\{ \alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t)\right\} =máx(\alpha u_{1}(t)+\alpha_{2}u_{2}(t))$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\neq\alpha_{1}L\left\{ u_{1}(t)\right\} +\alpha_{2}L\left\{ u_{2}(t)\right\} =\alpha_{1}(máx(u_{1}(t))+\alpha_{2}(máx(u_{2}(t))=\alpha_{1}máx(u_{1}(t))+\alpha_{2}máx(u_{2}(t))$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+por lo tanto el sistema no es lineal.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\left(t\right)=u'(t)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Se tiene que:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $L\left\{ \alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t)\right\} =u'(\alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t))=\alpha_{1}u'(u_{1}(t)+\alpha_{2}u'(u_{2}(t))$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $=\alpha_{1}L\left\{ u_{1}(t)\right\} +\alpha_{2}L\left\{ u_{2}(t)\right\} =\alpha_{1}u'(t)+\alpha_{2}u_{2}'(t)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+por lo tanto el sistema es lineal.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\left(t\right)=|u(t)|$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Se tiene que:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $L\left\{ \alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t)\right\} =|\alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t)|=|\alpha_{1}||u_{1}(t)|+|\alpha_{2}||u_{2}(t)|$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\neq\alpha_{1}L\left\{ u_{1}(t)\right\} +\alpha_{2}L\left\{ u_{2}(t)\right\} =\alpha_{1}|u_{1}(t)|+\alpha_{2}|u_{2}(t)|$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+por lo tanto el sistema no es lineal.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Demuestre si los siguientes sistemas con múltiples variables de entrada
+ 
+\begin_inset Formula $d\left(\vec{u},\vec{v}\right)$
+\end_inset
+
+ (con entrada vectorial 
+\begin_inset Formula $\vec{u},\vec{v}\in\mathbb{R}^{n}$
+\end_inset
+
+ y salida escalar 
+\begin_inset Formula $s\in\mathbb{R}$
+\end_inset
+
+), cumplen la condición de homogeneidad absoluta 
+\begin_inset Formula $d\left(\alpha_{1}\vec{u},\alpha_{2}\vec{v}\right)=\left|\alpha_{1}\right|\left|\alpha_{2}\right|d\left(\vec{u},\vec{v}\right)$
+\end_inset
+
+ de superposición 
+\begin_inset Formula $d\left(\vec{u}+\vec{x},\vec{v}+\vec{y}\right)=d\left(\vec{u},\vec{v}\right)+d\left(\vec{x},\vec{y}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+La Norma de Manhattan 
+\begin_inset Formula $\mathit{l}_{1}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\left\Vert \overrightarrow{x}\right\Vert _{1}=\sum_{i}^{n}|x_{i}|
+\]
+
+\end_inset
+
+- Se tiene que:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $L\left\{ \overrightarrow{x}+\overrightarrow{y}\right\} =\sum_{i}^{n}|x_{i}+y_{i}|$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\neq L\left\{ \overrightarrow{x}\right\} +L\left\{ \overrightarrow{y}\right\} =\sum_{i}^{n}|x_{i}|+\sum_{i}^{n}|y|$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+por lo tanto no cumple la superposición.
+\begin_inset Newline newline
+\end_inset
+
+- Se tiene
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Formula $L\left\{ \alpha_{1}\overrightarrow{x}\right\} =|\alpha_{1}|\sum_{i}^{n}|x_{i}|$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+por lo tanto cumple con la homegeneidad absoluta.
+\end_layout
+
+\begin_layout Enumerate
+Norma Euclidiana 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert \overrightarrow{x}\right\Vert _{2}=\sqrt{\sum_{i}^{n}|x_{i}|^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+- Se tiene que:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $L\left\{ \overrightarrow{x}+\overrightarrow{y}\right\} =\sqrt{\sum_{i}^{n}|x_{i}+y_{i}|^{2}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\neq L\left\{ \overrightarrow{x}\right\} +L\left\{ \overrightarrow{y}\right\} =\sqrt{\sum_{i}^{n}|x_{i}|^{2}}+\sqrt{\sum_{i}^{n}|y|^{2}}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+por lo tanto no cumple la superposición.
+\begin_inset Newline newline
+\end_inset
+
+- Se tiene
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Formula $L\left\{ \alpha_{1}\overrightarrow{x}\right\} =|\alpha_{1}|\sqrt{\sum_{i}^{n}|x_{i}|^{2}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+por lo tanto cumple con la homegeneidad absoluta.
+\end_layout
+
+\begin_layout Enumerate
+Norma L∞
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\left\Vert \overrightarrow{x}\right\Vert _{\infty}=\max\left(\left|x_{i}\right|\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+- Sea 
+\begin_inset Formula $\overrightarrow{u}=\alpha\overrightarrow{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\Vert \overrightarrow{u}\right\Vert _{\infty}=\max\left(\left|\alpha x_{i}\right|\right)=\left|\alpha\right|\max\left(\left|x_{i}\right|\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+por lo tanto cumple la homogeneidad
+\end_layout
+
+\begin_layout Standard
+- Se tiene 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $L\left\{ \overrightarrow{u}+\overrightarrow{v}\right\} =\max\left(\left|u_{i}+v_{i}\right|\right)\neq\max\left(\left|v_{i}\right|\right)+\max\left(\left|u_{i}\right|\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+por lo tanto no cumple la superposición.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Para una función multivariable 
+\begin_inset Formula $g(x_{1},x_{2},...,x_{n})=g(\overrightarrow{x})$
+\end_inset
+
+ con dominio en 
+\begin_inset Formula $\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+ :
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $g(\overrightarrow{x})=\overrightarrow{w}\text{·}\overrightarrow{x}+b=\overrightarrow{w}^{T}\overrightarrow{x}+b=w_{1}x_{1}+w_{2}x_{2}+...+w_{n}x_{n}+b$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+con 
+\begin_inset Formula $\overrightarrow{w}\in\mathbb{R}^{n}$
+\end_inset
+
+ y 
+\begin_inset Formula $b\in\mathbb{R}$
+\end_inset
+
+ coeficientes conocidos, demuestre si es un sistema lineal respecto al arreglo
+ de entradas 
+\begin_inset Formula $\overrightarrow{x}.$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+- Sea 
+\begin_inset Formula $\overrightarrow{u}=\alpha\overrightarrow{x}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $g(\overrightarrow{u})=\overrightarrow{w}\text{·}\alpha\overrightarrow{x}+b=\alpha\overrightarrow{w}^{T}\overrightarrow{x}+b=\alpha(w_{1}x_{1}+w_{2}x_{2}+...+w_{n}x_{n})+b$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\neq\alpha g(\overrightarrow{u})=\alpha\overrightarrow{(w}\text{·}\alpha\overrightarrow{x}+b)=\alpha(\overrightarrow{w}^{T}\overrightarrow{x}+b)=\alpha(w_{1}x_{1}+w_{2}x_{2}+...+w_{n}x_{n}+b)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+por lo tanto no cumple la homogeneidad
+\begin_inset Newline newline
+\end_inset
+
+- Se tiene
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $L\left\{ \vec{u}+\vec{v}\right\} =\overrightarrow{w}\text{·}(\vec{u}+\vec{v})+b=\overrightarrow{w}^{T}(\vec{u}+\vec{v})+b=w_{1}(u_{1}+v_{1})+w_{2}(u_{2}+v_{2})+...+w_{n}(u_{n}+v_{n})+b$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\neq L\left\{ \vec{u}\right\} +L\left\{ \vec{v}\right\} =w_{1}u_{1}+w_{2}u_{2}+...+w_{n}u_{n}+b+w_{1}v_{1}+w_{2}v_{2}+...+w_{n}v_{n}+b=$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $w_{1}(u_{1}+v_{1})+w_{2}(u_{2}+v_{2})+...+w_{n}(u_{n}+v_{n})+2b$
+\end_inset
+
+ por lo tanto no cumple la superposición.
+\begin_inset Newline newline
+\end_inset
+
+d.1.) Para que el sistema sea lineal se debe agregar un elemento más al vector
+ w, el elemento debe tener un valor de uno.
+ Adicionalmente, los arreglos de entrada deben contener un elemento más
+ con valor de b, con esto se elimina b de la ecuación original.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Vectores (20 puntos)
+\end_layout
+
+\begin_layout Enumerate
+Graficación y propiedades de los vectores
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Usando Python grafique los siguientes vectores 
+\begin_inset Formula $\vec{v}_{1}=\begin{bmatrix}-0.3\\
+0.8\\
+0.1
+\end{bmatrix}$
+\end_inset
+
+, 
+\begin_inset Formula $\vec{v}_{2}=\begin{bmatrix}0.5\\
+0.2\\
+0.4
+\end{bmatrix}$
+\end_inset
+
+ y 
+\begin_inset Formula $\vec{v}_{3}=\begin{bmatrix}\frac{1}{\sqrt{2}}\\
+\frac{-1}{\sqrt{2}}\\
+0
+\end{bmatrix}$
+\end_inset
+
+, usando la función quiver3.
+\end_layout
+
+\begin_layout Enumerate
+Demuestre cuales de los vectores anteriores son unitarios.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+NINGUNO ES UNITARIO!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Calcule el ángulo en grados, entre los vectores 
+\begin_inset Formula $\vec{v}_{1}$
+\end_inset
+
+y 
+\begin_inset Formula $\vec{v}_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\vec{v}_{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $\vec{v}_{3}$
+\end_inset
+
+ y 
+\begin_inset Formula $\vec{v}_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\vec{v}_{3}$
+\end_inset
+
+, implementando la fórmula en 
+\series bold
+Pytorch
+\series default
+.
+  
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Angle between v1=tensor([-0.9000, 0.7000, 0.2000]) and v2=tensor([0.4000, 0.1000,
+ 0.4000]) : tensor(1.8921) Angle between v2=tensor([0.4000, 0.1000, 0.4000])
+ and v3=tensor([3., 5., 7.]) : tensor(0.5358) Angle between v1=tensor([-0.9000,
+ 0.7000, 0.2000]) and v3=tensor([3., 5., 7.]) : tensor(1.3606)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Calcule la distancia en 
+\lang english
+
+\begin_inset Formula $\ell_{1}$
+\end_inset
+
+
+\lang spanish
+, 
+\lang english
+
+\begin_inset Formula $\ell_{2}$
+\end_inset
+
+
+\lang spanish
+, y 
+\begin_inset Formula $\ell_{\infty}$
+\end_inset
+
+ entre los vectores 
+\begin_inset Formula $\vec{v}_{1}$
+\end_inset
+
+y 
+\begin_inset Formula $\vec{v}_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\vec{v}_{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $\vec{v}_{3}$
+\end_inset
+
+ y 
+\begin_inset Formula $\vec{v}_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\vec{v}_{3}$
+\end_inset
+
+, implementando la fórmula en 
+\series bold
+Pytorch
+\series default
+.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Investigue como implementar en pytorch tal computo en GPU, escribiendo en
+ el presente reporte los pasos para realizar tal cómputo en el GPU (usando
+ google colab), y diseñe la siguiente prueba:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Cree 
+\begin_inset Formula $m$
+\end_inset
+
+ vectores de 
+\begin_inset Formula $n$
+\end_inset
+
+ dimensiones aleatorios, y escoga al menos 3 valores distintos de 
+\begin_inset Formula $m$
+\end_inset
+
+ y 
+\begin_inset Formula $n$
+\end_inset
+
+ para comparar la velocidad de procesamiento en GPU y CPU 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imgs/tiempos.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+FALTA CAMBIAAAR
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+(5 puntos)
+\series default
+ Demuestre que si dos vectores 
+\begin_inset Formula $\vec{u},\vec{v}$
+\end_inset
+
+ son paralelos, entonces 
+\begin_inset Formula $\overrightarrow{u}=k\overrightarrow{v}$
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+revisar, pero sacando la norma de 
+\begin_inset Formula $\overrightarrow{u}=k\overrightarrow{v}$
+\end_inset
+
+ se puede tratar de llegar a ello
+\begin_inset Graphics
+	filename imgs/demo.png
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+(10 puntos)
+\series default
+ Un hiperplano 
+\begin_inset Formula $f$
+\end_inset
+
+ definido en un espacio 
+\begin_inset Formula $\mathbb{R}^{n+1}$
+\end_inset
+
+ se puede expresar como una función con dominio 
+\begin_inset Formula $\vec{x}\in\mathbb{R}^{n}$
+\end_inset
+
+ y codominio en 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ como sigue: 
+\begin_inset Formula $z=f\left(\vec{x}\right)=\vec{x}\cdot\vec{w}$
+\end_inset
+
+, con 
+\begin_inset Formula $\vec{w}\in\mathbb{R}^{n}$
+\end_inset
+
+ el arreglo de coeficientes de tal funcional.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Determine la ecuación de un plano paralelo 
+\begin_inset Formula $f_{2}$
+\end_inset
+
+ al plano 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+ con pesos 
+\begin_inset Formula $\vec{w}_{1}=\begin{bmatrix}0.7\\
+0.4
+\end{bmatrix}$
+\end_inset
+
+, reportando los pesos 
+\begin_inset Formula $\vec{w}_{2}$
+\end_inset
+
+ y la ecuación en su forma vectorial 
+\lang english
+
+\begin_inset Formula $\vec{n}\cdot\overrightarrow{P_{0}P_{1}}=0,$
+\end_inset
+
+ con 
+\begin_inset Formula $\vec{n}$
+\end_inset
+
+ el vector normal a tal plano, 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+ y 
+\begin_inset Formula $P$
+\end_inset
+
+ puntos sobre el mismo.
+ Un vector normal 
+\begin_inset Formula $\vec{n}\in\mathbb{R}^{m}$
+\end_inset
+
+ a dos vectores 
+\begin_inset Formula $\vec{v}\in\mathbb{R}^{m}$
+\end_inset
+
+ y 
+\begin_inset Formula $\vec{u}\in\mathbb{R}^{m}$
+\end_inset
+
+ se obtiene en términos del producto cruz como 
+\begin_inset Formula $\vec{n}=\vec{v}\times\vec{u}$
+\end_inset
+
+, el cual se define a continuación (con 
+\begin_inset Formula $A_{\backslash i}$
+\end_inset
+
+ el resultado de eliminar la columna 
+\begin_inset Formula $i$
+\end_inset
+
+ de la matriz 
+\begin_inset Formula $A$
+\end_inset
+
+): 
+\lang spanish
+
+\begin_inset Formula 
+\[
+\vec{n}=\textrm{det}\left(A_{\backslash1}\right)\hat{i}-\textrm{det}\left(A_{\backslash2}\right)\hat{j}+\textrm{det}\left(A_{\backslash3}\right)\hat{k}
+\]
+
+\end_inset
+
+con 
+\begin_inset Formula $A=\begin{bmatrix}- & \vec{v} & -\\
+- & \vec{u} & -
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Grafique ambos planos en MATLAB o con Matplotlib en Python, basándose en
+ la función 
+\emph on
+surf.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Calcule las curvas de nivel en 
+\begin_inset Formula $z=2$
+\end_inset
+
+, y expreselas en términos de una ecuación de la recta, de forma paramétrica
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $t\,\vec{v}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang spanish
+.
+\end_layout
+
+\begin_layout Enumerate
+Calcule el vector gradiente para ambos planos 
+\begin_inset Formula $\nabla_{\overrightarrow{x}}f_{1}$
+\end_inset
+
+y 
+\begin_inset Formula $\nabla_{\overrightarrow{x}}f_{2}$
+\end_inset
+
+, y muestre que ambos vectores gradiente son paralelos.
+\end_layout
+
+\begin_layout Enumerate
+Muestre además que los vectores gradientes son perpendiculares con las curvas
+ de nivel calculadas en el punto transanterior.
+\begin_inset Note Note
+status open
+
+\begin_layout Enumerate
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Funciones multivariable (15 puntos)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Enumerate
+Funciones lineales multivariable: un hiperplano definido en un espacio 
+\begin_inset Formula $\mathbb{R}^{n+1}$
+\end_inset
+
+ se puede expresar como una función con dominio 
+\begin_inset Formula $\vec{x}\in\mathbb{R}^{n}$
+\end_inset
+
+ y codominio en 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ como sigue: 
+\begin_inset Formula $z=f\left(\vec{x}\right)=\vec{x}\cdot\vec{w}$
+\end_inset
+
+, con 
+\begin_inset Formula $\vec{w}\in\mathbb{R}^{n}$
+\end_inset
+
+ el arreglo de coeficientes de tal funcional.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+veeeeeer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Tómese 
+\begin_inset Formula $\vec{w}_{1}=\begin{bmatrix}0.5\\
+0.2
+\end{bmatrix}$
+\end_inset
+
+ para la función 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\vec{w}_{2}=\begin{bmatrix}-0.1\\
+0.05
+\end{bmatrix}$
+\end_inset
+
+ para la función 
+\begin_inset Formula $f_{2}$
+\end_inset
+
+, (funciones con dominio en 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ y codominio en ).
+ Grafique ambos planos en MATLAB, usando la función 
+\emph on
+surf
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Exprese ambos planos en su forma vectorial 
+\lang english
+
+\begin_inset Formula $\vec{n}\cdot\overrightarrow{P_{0}P_{1}}=0,$
+\end_inset
+
+ con 
+\begin_inset Formula $\vec{n}$
+\end_inset
+
+ el vector normal a tal hiperplano, 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+ y 
+\begin_inset Formula $P$
+\end_inset
+
+ puntos sobre el mismo.
+ Un vector normal 
+\begin_inset Formula $\vec{n}\in\mathbb{R}^{m}$
+\end_inset
+
+ a dos vectores 
+\begin_inset Formula $\vec{v}\in\mathbb{R}^{m}$
+\end_inset
+
+ y 
+\begin_inset Formula $\vec{u}\in\mathbb{R}^{m}$
+\end_inset
+
+ se obtiene en términos del producto cruz como 
+\begin_inset Formula $\vec{n}=\vec{v}\times\vec{u}$
+\end_inset
+
+, el cual se define a continuación (con 
+\begin_inset Formula $A_{\backslash i}$
+\end_inset
+
+ el resultado de eliminar la columna 
+\begin_inset Formula $i$
+\end_inset
+
+ de la matriz 
+\begin_inset Formula $A$
+\end_inset
+
+): 
+\lang spanish
+
+\begin_inset Formula 
+\[
+\vec{n}=\textrm{det}\left(A_{\backslash1}\right)\hat{i}-\textrm{det}\left(A_{\backslash2}\right)\hat{j}+\textrm{det}\left(A_{\backslash3}\right)\hat{k}
+\]
+
+\end_inset
+
+con 
+\begin_inset Formula $A=\begin{bmatrix}- & \vec{v} & -\\
+- & \vec{u} & -
+\end{bmatrix}$
+\end_inset
+
+
+\lang english
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Para el primer plano:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $P_{0}=(1,1,0.7)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $P_{1}=(0,0,0)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $P_{2}=(2,2,1.4)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\overrightarrow{P_{0}P_{1}}=\begin{bmatrix}1\\
+1\\
+0.7
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\overrightarrow{P_{0}P_{2}}=\begin{bmatrix}2\\
+5\\
+2
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\begin{bmatrix}1 & 1 & 0.7\\
+2 & 5 & 2
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vec{n}=\overrightarrow{P_{0}P_{2}}\times\overrightarrow{P_{0}P_{1}}=\begin{bmatrix}1 & 0.7\\
+5 & 2
+\end{bmatrix}i-\begin{bmatrix}1 & 0.7\\
+2 & 2
+\end{bmatrix}j+\begin{bmatrix}1 & 1\\
+2 & 5
+\end{bmatrix}k=(2-3.5)i-(2-1.4)j+(5-2)k=-1.5i-0.6j+3k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Grafique los vectores normales de ambos planos usando la función 
+\emph on
+quiver3, 
+\emph default
+junto
+\emph on
+ 
+\emph default
+con las superficies de los planos
+\emph on
+.
+ 
+\emph default
+Demuestre numéricamente si tales planos son perpendiculares.
+\end_layout
+
+\begin_layout Enumerate
+Determine la ecuación de la recta formada por la intersección de ambos planos.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Los puntos que están en esa recta satisfacen:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.5x+0.2y=-0.1x+0.05y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Nos damos 
+\begin_inset Formula $x_{1}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.195y_{1}=-0.6\Rightarrow y_{1}=-3,077$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Nos damos 
+\begin_inset Formula $y_{2}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.195=-0.6x_{2}\Rightarrow x_{2}=-0.325$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+El vector es: 
+\begin_inset Formula $\overrightarrow{\left(x_{1},y_{1}\right)\left(x_{2},y_{2}\right)}=\left[1+0.325,1+3.077\right]=\left[1.325,4.077\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+La ecuación vectorial de la recta es:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+P=r\left(t\right)=\left(1,-3.077\right)+t\,\left[1.325,4.077\right],\label{eq:recta}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Defina y grafique una curva de nivel, como una intersección de los planos
+ en cada nivel 
+\begin_inset Formula $z=c$
+\end_inset
+
+ , para cada uno de los planos formados por 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $f_{2}$
+\end_inset
+
+, y obtenga la ecuación de la recta para ambas curvas.
+\end_layout
+
+\begin_layout Enumerate
+Calcule los vectores gradiente para ambos funcionales y compruebe que tales
+ vectores son ortogonales para las curvas de nivel calculadas en el apartado
+ anterior.
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Derivadas parciales
+\series default
+: Para cada una de las siguientes funciones multivariable: grafique su superfici
+e, calcule el vector gradiente manualmente, evaluelo y grafique el vector
+ unitario en la dirección del gradiente para los dos puntos especificados
+ (en la misma figura de la superficie) y calcule la magnitud de tal vector
+ gradiente en cada punto.
+ En general, ¿qué indica la magnitud del vector gradiente? Use MATLAB, Octave
+ o Python.
+ Finalmente calcule la matriz Hessiana para cada una.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $z=f\left(x,y\right)=3x^{2}+2y^{4}$
+\end_inset
+
+, evaluación del gradiente en los puntos 
+\begin_inset Formula $P_{0}=\left(0,0\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $P_{1}=\left(7.4,-6.3\right)$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+https://derivadas.es/derivadas-parciales/
+\end_layout
+
+\begin_layout Plain Layout
+otro ej general
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{df}{dx}=3x^{2}y^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{df}{dy}=2x^{3}y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nabla f_{P_{1}}=3*7.4^{2}*(-6.3)^{2}i+2*7.4^{3}*(-6.3)j=6520.3i-5105.8j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nabla f_{P_{1}}=\frac{6520.3}{\sqrt{6520^{2}+5105^{2}}}i-\frac{5105.8}{\sqrt{6520^{2}+5105^{2}}}j=0.7874i-0.6166j$
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename imgs/r12.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+x=-10:.1:10;  [X,Y] = meshgrid(x); Z = X.^3 .* Y.^2 + 1;  Z1 = Z.*0;  figure;
+ surf(X,Y,Z);  shading flat  xlabel('x');  ylabel('y');  zlabel('z')  %surf(X,Y,
+Z1);  hold on;  M = [0  0.7874 ; 0  -0.6166];  plotv(M,'-');
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=f\left(x,y\right)=4x^{2}+2x+e^{2x}+5y^{2}+e^{3y}+1$
+\end_inset
+
+, evaluación del gradiente en los puntos 
+\begin_inset Formula $P_{0}=\left(2,1\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $P_{1}=\left(5,7\right)$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imgs/r4.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=f\left(x,y\right)=\sin\left(x^{2}\right)+x\cos\left(y^{3}\right)$
+\end_inset
+
+, evaluación del gradiente en los puntos 
+\begin_inset Formula $P_{0}=\left(-2,6\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $P_{1}=\left(0,4\right)$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imgs/r5.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\ln\left(x^{2}+y^{2}\right)+z=1$
+\end_inset
+
+, evaluación del gradiente en los puntos 
+\begin_inset Formula $P_{0}=\left(5.2,6.4\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $P_{1}=\left(5.2,2.3\right)$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imgs/r6.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Matrices y calculo matricial (30 puntos)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+(20 puntos)
+\series default
+ Demuestre que (En algunos ejercicios se recomienda usar la notación de
+ filas y columnas compacta (filas y columnas en vectores), como la utilizada
+ en el material del curso): 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\lang english
+Si 
+\begin_inset Formula $\overrightarrow{x}\in\mathbb{R}^{n}$
+\end_inset
+
+ y 
+\begin_inset Formula $A=\frac{\overrightarrow{x}\overrightarrow{x}^{T}}{\overrightarrow{x}^{T}\overrightarrow{x}}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $A^{2}=A$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+Por asociatividad notacion de filas y columnas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Demuestre que si 
+\begin_inset Formula $A,B\in\mathbb{R}^{n\times n}$
+\end_inset
+
+ son matrices 
+\series bold
+diagonales
+\series default
+ y 
+\begin_inset Formula $ABAB=0_{n}$
+\end_inset
+
+ , entonces 
+\begin_inset Formula $BABA=0_{n}$
+\end_inset
+
+ con 
+\begin_inset Formula $0_{n}$
+\end_inset
+
+ una matriz de ceros 
+\begin_inset Formula $0_{n}\in\mathbb{R}^{n\times n}$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+calculoMatricialEjercicios.pdf 
+\begin_inset Graphics
+	filename imgs/resp222.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Sean las matrices 
+\begin_inset Formula $A,B\in\mathbb{R}^{n\times n}$
+\end_inset
+
+, con 
+\begin_inset Formula $A+B=I$
+\end_inset
+
+ y 
+\begin_inset Formula $AB=0_{n}$
+\end_inset
+
+, demuestre que 
+\begin_inset Formula $A^{2}=A$
+\end_inset
+
+ y
+\begin_inset Formula $B^{2}=B$
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+Haciendo 
+\begin_inset Formula $\left(A+B\right)^{2}$
+\end_inset
+
+y usando la propiedad 
+\begin_inset Formula $AB=0_{n}$
+\end_inset
+
+ es fácil verlo
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Graphics
+	filename imgs/respwil1.png
+	lyxscale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Sea la matriz 
+\begin_inset Formula $A\in\mathbb{R}^{n\times n}$
+\end_inset
+
+ simétrica y una matriz cualquiera (no puede asumir que es simétrica) 
+\begin_inset Formula $P\in\mathbb{R}^{n\times n}$
+\end_inset
+
+.
+ Demuestre que la matriz 
+\begin_inset Formula $P^{T}AP$
+\end_inset
+
+ es también simétrica.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+La propiedad de la simetría establece que 
+\begin_inset Formula $A=A^{T}$
+\end_inset
+
+, por lo que deben usar esa ecuación para 
+\begin_inset Formula $P^{T}AP$
+\end_inset
+
+, trasponiendola y usando las propiedades de la traspuesta sale.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+(10 puntos)
+\series default
+\lang english
+ Cálculo matricial:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\lang english
+Sea 
+\begin_inset Formula $f\left(\vec{x}\right)=\frac{1}{2}\vec{x}^{T}A\vec{x}+\vec{b}^{T}\vec{x}+\vec{b}\cdot\vec{x}$
+\end_inset
+
+ con 
+\begin_inset Formula $A$
+\end_inset
+
+ una matriz simétrica, calcule 
+\begin_inset Formula $\nabla f\left(\vec{x}\right)$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imgs/r2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Ax+2b en el caso modificado
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Sea 
+\begin_inset Formula $f\left(\vec{x}\right)=\vec{b}^{T}\vec{x}$
+\end_inset
+
+, con 
+\begin_inset Formula $\vec{x},\vec{b}\in\mathbb{R}^{3}$
+\end_inset
+
+, y 
+\begin_inset Formula $\vec{b}=\left[b_{1},b_{2},b_{3}\right]^{T}$
+\end_inset
+
+ un arreglo de valores conocidos, obtenga los valores de las entradas de
+ 
+\begin_inset Formula $\vec{x}=\left[x_{1},x_{2},x_{3}\right]^{T}$
+\end_inset
+
+, resolviendo la siguiente ecuación diferencial:
+\begin_inset Formula 
+\[
+\nabla_{\vec{x}}f=A\vec{x}+\overrightarrow{b}\cdot\overrightarrow{b}
+\]
+
+\end_inset
+
+con 
+\begin_inset Formula $A=\begin{bmatrix}1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{bmatrix}$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Formula $b1-b1^{2}-b2^{2}=x1yb2-b1^{2}-b2^{2}=x2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Tómese a la función 
+\begin_inset Formula $\overrightarrow{g}\left(\overrightarrow{x}\right)$
+\end_inset
+
+ como una función con salida multivaluada, es decir, de múltiples salidas,
+ y también, múltiples entradas.
+ En este caso 
+\begin_inset Formula $\overrightarrow{x}\in\mathbb{R}^{3}$
+\end_inset
+
+y 
+\begin_inset Formula $\overrightarrow{g}\in\mathbb{R}^{2}$
+\end_inset
+
+, dada por: 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Graphics
+	filename imgs/jacobiano.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\overrightarrow{g}=\left[x_{1}^{2}+\sin\left(3x_{2}\right),\;e^{x_{2}}+\ln\left(x_{1}\right)\right]^{T}
+\]
+
+\end_inset
+
+Investigue y explique en qué consiste el 
+\series bold
+Jacobiano
+\series default
+ de una función de múltiples salidas, y calculelo para la función 
+\begin_inset Formula $\overrightarrow{g}\left(\overrightarrow{x}\right)$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+Jacobiano 
+\begin_inset Graphics
+	filename imgs/jacobiano2.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Probabilidades (15 puntos)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+(10 puntos)
+\series default
+ Utilizando las funciones similares a 
+\emph on
+imshow 
+\emph default
+y 
+\emph on
+surf 
+\emph default
+de MATLAB y Octave pero en 
+\series bold
+Python usando la librería pytorch
+\series default
+, (en cada figura incluya las dos gráficas), grafique, de ser posible, las
+ siguientes funciones Gaussianas 
+\begin_inset Formula $f:\mathbb{R}^{2}\rightarrow\mathbb{R}$
+\end_inset
+
+, con los siguientes parámetros.
+ Programe la función manualmente usando la definición de la función Gaussiana
+ multi-variable vista en clase:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\Sigma=\begin{bmatrix}25 & 0\\
+0 & 5
+\end{bmatrix}$
+\end_inset
+
+, 
+\begin_inset Formula $\vec{\mu}=\begin{bmatrix}4\\
+7
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Sigma=\begin{bmatrix}8 & 0\\
+0 & 0.5
+\end{bmatrix}$
+\end_inset
+
+, 
+\begin_inset Formula $\vec{\mu}=\begin{bmatrix}8\\
+1
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Sigma=\begin{bmatrix}2 & -3\\
+-3 & 2
+\end{bmatrix}$
+\end_inset
+
+, 
+\begin_inset Formula $\vec{\mu}=\begin{bmatrix}1\\
+2
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Sigma=\begin{bmatrix}1 & 25\\
+25 & 2
+\end{bmatrix}$
+\end_inset
+
+, 
+\begin_inset Formula $\vec{\mu}=\begin{bmatrix}5\\
+2
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y comente los efectos que ejerce 
+\series bold
+cada 
+\series default
+desviación estándar 
+\begin_inset Formula $\Sigma_{1,1}=\sigma_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\Sigma_{2,2}=\sigma_{2}$
+\end_inset
+
+ , además de 
+\series bold
+cada 
+\series default
+covarianza 
+\begin_inset Formula $\Sigma_{1,2}$
+\end_inset
+
+ y 
+\begin_inset Formula $\Sigma_{2,1}$
+\end_inset
+
+ en la forma de la función de densidad Gaussiana.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+varianza hace mas anchas las campanas, covarianza hace girar los datos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+En 
+\series bold
+Python, usando la librería Pytorch
+\series default
+, Genere dos conjuntos de datos con 
+\begin_inset Formula $N=200$
+\end_inset
+
+ puntos en un espacio 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ a partir de una distribución Gaussiana, donde el primer cúmulo de datos
+ se tenga que 
+\begin_inset Formula $\Sigma_{1}=\begin{bmatrix}15 & 2\\
+2 & 1
+\end{bmatrix}$
+\end_inset
+
+ y para el segundo cúmulo de datos 
+\begin_inset Formula $\Sigma_{1}=\begin{bmatrix}3 & 1\\
+1 & 2
+\end{bmatrix}$
+\end_inset
+
+, en Pytorch, el primero centrado en 
+\begin_inset Formula $\vec{\mu}_{1}=\begin{bmatrix}1 & 2\end{bmatrix}$
+\end_inset
+
+ y el segundo en 
+\begin_inset Formula $\vec{\mu}_{2}=\begin{bmatrix}15 & 12\end{bmatrix}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Grafique los resultados usando la función 
+\emph on
+scatter
+\emph default
+ o similar en Python, con símbolos que dejen claro la pertenencia a cada
+ uno de los cúmulos.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imgs/dist.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
