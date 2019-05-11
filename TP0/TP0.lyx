@@ -278,31 +278,54 @@ Demuestre si los siguientes sistemas
 \begin_inset Formula $g\left(t\right)=u(t)+2$
 \end_inset
 
-
-\begin_inset Newline newline
-\end_inset
-
-Se tiene que: 
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $L\left\{ \alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t)\right\} =\alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t)+2$
-\end_inset
-
  
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Se tiene que cumplir que: 
+\lang english
+
+\begin_inset Formula 
+\[
+L\left\{ \alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t)\right\} =\alpha_{1}L\left\{ u_{1}(t)\right\} +\alpha_{2}L\left\{ u_{2}(t)\right\} 
+\]
+
+\end_inset
+
+
+\lang spanish
+Desarrollando la propiedad anterior, se tiene que:
+\lang english
+
+\begin_inset Formula 
+\[
+\alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t)+2\neq\alpha_{1}(u_{1}(t)+2)+\alpha_{2}(u_{2}(t)+2)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t)+2\neq\alpha_{1}u_{1}(t)+\alpha_{1}2+\alpha_{2}u_{2}(t)+\alpha_{2}2
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Formula $\neq\alpha_{1}L\left\{ u_{1}(t)\right\} +\alpha_{2}L\left\{ u_{2}(t)\right\} =\alpha_{1}(u_{1}(t)+2)+\alpha_{2}(u_{2}(t)+2)=\alpha_{1}u_{1}(t)+\alpha_{1}2+\alpha_{2}u_{2}(t)+\alpha_{2}2$
+por lo tanto el sistema no es lineal.
+\begin_inset VSpace 3mm
 \end_inset
 
- 
-\end_layout
 
-\begin_layout Standard
-por lo tanto el sistema no es lineal.
 \end_layout
 
 \end_deeper
@@ -311,125 +334,213 @@ por lo tanto el sistema no es lineal.
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
-
-Se tiene que:
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $L\left\{ \alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t)\right\} =(\alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t))h(t)=\alpha_{1}u_{1}(t)h(t)+\alpha_{2}u_{2}(t)h(t)$
-\end_inset
-
- 
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $=\alpha_{1}L\left\{ u_{1}(t)\right\} +\alpha_{2}L\left\{ u_{2}(t)\right\} =\alpha_{1}(u_{1}(t)h(t))+\alpha_{2}(u_{2}(t)h(t))=\alpha_{1}u_{1}(t)h(t)+\alpha_{2}u_{2}(t)h(t)$
+\begin_inset VSpace 3mm
 \end_inset
 
 
 \begin_inset Newline newline
 \end_inset
 
-por lo tanto el sistema es lineal.
+Se tiene que cumplir que: 
+\lang english
+
+\begin_inset Formula 
+\[
+L\left\{ \alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t)\right\} =\alpha_{1}L\left\{ u_{1}(t)\right\} +\alpha_{2}L\left\{ u_{2}(t)\right\} 
+\]
+
+\end_inset
+
+
+\lang spanish
+Desarrollando la propiedad anterior, se tiene que:
+\lang english
+
+\begin_inset Formula 
+\[
+(\alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t))h(t)=\alpha_{1}(u_{1}(t)h(t))+\alpha_{2}(u_{2}(t)h(t))
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\alpha_{1}u_{1}(t)h(t)+\alpha_{2}u_{2}(t)h(t)=\alpha_{1}u_{1}(t)h(t)+\alpha_{2}u_{2}(t)h(t)
+\]
+
+\end_inset
+
+
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+por lo tanto el sistema es lineal.
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $g\left(t\right)=máx(u(t))\,$
 \end_inset
 
 
-\begin_inset Newline newline
+\begin_inset VSpace 3mm
 \end_inset
 
-Se tiene que:
-\begin_inset Newline newline
-\end_inset
+Se tiene que cumplir que: 
+\lang english
 
+\begin_inset Formula 
+\[
+L\left\{ \alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t)\right\} =\alpha_{1}L\left\{ u_{1}(t)\right\} +\alpha_{2}L\left\{ u_{2}(t)\right\} 
+\]
 
-\begin_inset Formula $L\left\{ \alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t)\right\} =máx(\alpha u_{1}(t)+\alpha_{2}u_{2}(t))$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $\neq\alpha_{1}L\left\{ u_{1}(t)\right\} +\alpha_{2}L\left\{ u_{2}(t)\right\} =\alpha_{1}(máx(u_{1}(t))+\alpha_{2}(máx(u_{2}(t))=\alpha_{1}máx(u_{1}(t))+\alpha_{2}máx(u_{2}(t))$
 \end_inset
 
 
-\begin_inset Newline newline
+\lang spanish
+Desarrollando la propiedad anterior, se tiene que:
+\lang english
+
+\begin_inset Formula 
+\[
+máx(\alpha u_{1}(t)+\alpha_{2}u_{2}(t))=\alpha_{1}(máx(u_{1}(t))+\alpha_{2}(máx(u_{2}(t))
+\]
+
 \end_inset
 
-por lo tanto el sistema no es lineal.
+
+\begin_inset Formula 
+\[
+máx(\alpha u_{1}(t)+\alpha_{2}u_{2}(t))\neq\alpha_{1}máx(u_{1}(t))+\alpha_{2}máx(u_{2}(t))
+\]
+
+\end_inset
+
+
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+por lo tanto el sistema no es lineal.
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $g\left(t\right)=u'(t)$
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
-
-Se tiene que:
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $L\left\{ \alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t)\right\} =u'(\alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t))=\alpha_{1}u'(u_{1}(t)+\alpha_{2}u'(u_{2}(t))$
+\begin_inset VSpace 3mm
 \end_inset
 
 
 \begin_inset Newline newline
 \end_inset
 
+Se tiene que cumplir que: 
+\lang english
 
-\begin_inset Formula $=\alpha_{1}L\left\{ u_{1}(t)\right\} +\alpha_{2}L\left\{ u_{2}(t)\right\} =\alpha_{1}u'(t)+\alpha_{2}u_{2}'(t)$
+\begin_inset Formula 
+\[
+L\left\{ \alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t)\right\} =\alpha_{1}L\left\{ u_{1}(t)\right\} +\alpha_{2}L\left\{ u_{2}(t)\right\} 
+\]
+
 \end_inset
 
 
-\begin_inset Newline newline
+\lang spanish
+Desarrollando la propiedad anterior, se tiene que:
+\lang english
+
+\begin_inset Formula 
+\[
+u'(\alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t))=\alpha_{1}u'(u_{1}(t))+\alpha_{2}u'(u_{2}(t))
+\]
+
 \end_inset
 
-por lo tanto el sistema es lineal.
+
+\begin_inset Formula 
+\[
+\alpha_{1}u'(u_{1}(t))+\alpha_{2}u'(u_{2}(t))=\alpha_{1}u'(u_{1}(t))+\alpha_{2}u'(u_{2}(t))
+\]
+
+\end_inset
+
+
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+por lo tanto el sistema es lineal.
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Formula $g\left(t\right)=|u(t)|$
 \end_inset
 
 
-\begin_inset Newline newline
+\begin_inset VSpace 3mm
 \end_inset
 
-Se tiene que:
-\begin_inset Newline newline
-\end_inset
+Se tiene que cumplir que: 
+\lang english
 
+\begin_inset Formula 
+\[
+L\left\{ \alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t)\right\} =\alpha_{1}L\left\{ u_{1}(t)\right\} +\alpha_{2}L\left\{ u_{2}(t)\right\} 
+\]
 
-\begin_inset Formula $L\left\{ \alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t)\right\} =|\alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t)|=|\alpha_{1}||u_{1}(t)|+|\alpha_{2}||u_{2}(t)|$
-\end_inset
-
- 
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $\neq\alpha_{1}L\left\{ u_{1}(t)\right\} +\alpha_{2}L\left\{ u_{2}(t)\right\} =\alpha_{1}|u_{1}(t)|+\alpha_{2}|u_{2}(t)|$
 \end_inset
 
 
-\begin_inset Newline newline
+\lang spanish
+Desarrollando la propiedad anterior, se tiene que:
+\lang english
+
+\begin_inset Formula 
+\[
+|\alpha_{1}u_{1}(t)+\alpha_{2}u_{2}(t)|=\alpha_{1}|u_{1}(t)|+\alpha_{2}|u_{2}(t)|
+\]
+
 \end_inset
 
-por lo tanto el sistema no es lineal.
+
+\begin_inset Formula 
+\[
+|\alpha_{1}||u_{1}(t)|+|\alpha_{2}||u_{2}(t)|\neq\alpha_{1}|u_{1}(t)|+\alpha_{2}|u_{2}(t)|
+\]
+
+\end_inset
+
+
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+por lo tanto el sistema no es lineal.
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Demuestre si los siguientes sistemas con múltiples variables de entrada
@@ -470,45 +581,78 @@ La Norma de Manhattan
 
 \end_inset
 
-- Se tiene que:
-\begin_inset Newline newline
-\end_inset
 
-
-\begin_inset Formula $L\left\{ \overrightarrow{x}+\overrightarrow{y}\right\} =\sum_{i}^{n}|x_{i}+y_{i}|$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $\neq L\left\{ \overrightarrow{x}\right\} +L\left\{ \overrightarrow{y}\right\} =\sum_{i}^{n}|x_{i}|+\sum_{i}^{n}|y|$
-\end_inset
-
- 
-\begin_inset Newline newline
-\end_inset
-
-por lo tanto no cumple la superposición.
-\begin_inset Newline newline
-\end_inset
-
-- Se tiene
-\begin_inset Newline newline
-\end_inset
-
- 
-\begin_inset Formula $L\left\{ \alpha_{1}\overrightarrow{x}\right\} =|\alpha_{1}|\sum_{i}^{n}|x_{i}|$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-por lo tanto cumple con la homegeneidad absoluta.
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset VSpace 3mm
+\end_inset
+
+Se tiene que cumplir que: 
+\lang english
+
+\begin_inset Formula 
+\[
+L\left\{ \alpha\overrightarrow{x}\right\} =|\alpha|L\left\{ \overrightarrow{x}\right\} 
+\]
+
+\end_inset
+
+
+\lang spanish
+Desarrollando la propiedad anterior, se tiene que:
+\lang english
+
+\begin_inset Formula 
+\[
+|\alpha|\sum_{i}^{n}|x_{i}|=|\alpha|\sum_{i}^{n}|x_{i}|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+por lo tanto cumple con la homogeneidad absoluta.
+\begin_inset VSpace 3mm
+\end_inset
+
+También se tiene que cumplir que: 
+\lang english
+
+\begin_inset Formula 
+\[
+L\left\{ \overrightarrow{x}+\overrightarrow{y}\right\} =L\left\{ \overrightarrow{x}\right\} +L\left\{ \overrightarrow{y}\right\} 
+\]
+
+\end_inset
+
+
+\lang spanish
+Desarrollando la propiedad anterior, se tiene que:
+\lang english
+
+\begin_inset Formula 
+\[
+\sum_{i}^{n}|x_{i}+y_{i}|\neq\sum_{i}^{n}|x_{i}|+\sum_{i}^{n}|y|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+por lo tanto no cumple la superposición y el sistema no es lineal.
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Norma Euclidiana 
 \begin_inset Formula $l_{2}$
@@ -523,55 +667,29 @@ Norma Euclidiana
 \end_inset
 
 
-\begin_inset Newline newline
+\begin_inset VSpace 3mm
 \end_inset
 
-- Se tiene que:
-\begin_inset Newline newline
-\end_inset
+Se tiene que cumplir que: 
+\lang english
 
+\begin_inset Formula 
+\[
+L\left\{ \alpha\overrightarrow{x}\right\} =|\alpha|L\left\{ \overrightarrow{x}\right\} 
+\]
 
-\begin_inset Formula $L\left\{ \overrightarrow{x}+\overrightarrow{y}\right\} =\sqrt{\sum_{i}^{n}|x_{i}+y_{i}|^{2}}$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $\neq L\left\{ \overrightarrow{x}\right\} +L\left\{ \overrightarrow{y}\right\} =\sqrt{\sum_{i}^{n}|x_{i}|^{2}}+\sqrt{\sum_{i}^{n}|y|^{2}}$
-\end_inset
-
- 
-\begin_inset Newline newline
-\end_inset
-
-por lo tanto no cumple la superposición.
-\begin_inset Newline newline
-\end_inset
-
-- Se tiene
-\begin_inset Newline newline
-\end_inset
-
- 
-\begin_inset Formula $L\left\{ \alpha_{1}\overrightarrow{x}\right\} =|\alpha_{1}|\sqrt{\sum_{i}^{n}|x_{i}|^{2}}$
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
+\lang spanish
+Desarrollando la propiedad anterior, se tiene que:
+\lang english
 
-por lo tanto cumple con la homegeneidad absoluta.
-\end_layout
+\begin_inset Formula 
+\[
+|\alpha|\sqrt{\sum_{i}^{n}|x_{i}|^{2}}=|\alpha|\sqrt{\sum_{i}^{n}|x_{i}|^{2}}
+\]
 
-\begin_layout Enumerate
-Norma L∞
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $\left\Vert \overrightarrow{x}\right\Vert _{\infty}=\max\left(\left|x_{i}\right|\right)$
 \end_inset
 
 
@@ -579,38 +697,111 @@ Norma L∞
 
 \begin_deeper
 \begin_layout Standard
-- Sea 
-\begin_inset Formula $\overrightarrow{u}=\alpha\overrightarrow{x}$
+por lo tanto cumple con la homogeneidad absoluta.
+\begin_inset VSpace 3mm
+\end_inset
+
+También se tiene que cumplir que: 
+\lang english
+
+\begin_inset Formula 
+\[
+L\left\{ \overrightarrow{x}+\overrightarrow{y}\right\} =L\left\{ \overrightarrow{x}\right\} +L\left\{ \overrightarrow{y}\right\} 
+\]
+
+\end_inset
+
+
+\lang spanish
+Desarrollando la propiedad anterior, se tiene que:
+\lang english
+
+\begin_inset Formula 
+\[
+\sqrt{\sum_{i}^{n}|x_{i}+y_{i}|^{2}}\neq\sqrt{\sum_{i}^{n}|x_{i}|^{2}}+\sqrt{\sum_{i}^{n}|y|^{2}}
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\left\Vert \overrightarrow{u}\right\Vert _{\infty}=\max\left(\left|\alpha x_{i}\right|\right)=\left|\alpha\right|\max\left(\left|x_{i}\right|\right)$
+por lo tanto no cumple la superposición y el sistema no es lineal.
+\begin_inset VSpace 3mm
 \end_inset
 
- 
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Norma L∞
+\begin_inset VSpace 3mm
+\end_inset
+
+Se tiene que cumplir que: 
+\lang english
+
+\begin_inset Formula 
+\[
+L\left\{ \alpha\overrightarrow{x}\right\} =|\alpha|L\left\{ \overrightarrow{x}\right\} 
+\]
+
+\end_inset
+
+
+\lang spanish
+Desarrollando la propiedad anterior, se tiene que:
+\lang english
+
+\begin_inset Formula 
+\[
+\max\left(\left|\alpha x_{i}\right|\right)=\left|\alpha\right|\max\left(\left|x_{i}\right|\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+por lo tanto cumple con la homogeneidad absoluta.
+\begin_inset VSpace 3mm
+\end_inset
+
+También se tiene que cumplir que: 
+\lang english
+
+\begin_inset Formula 
+\[
+L\left\{ \overrightarrow{u}+\overrightarrow{v}\right\} =L\left\{ \overrightarrow{u}\right\} +L\left\{ \overrightarrow{v}\right\} 
+\]
+
+\end_inset
+
+
+\lang spanish
+Desarrollando la propiedad anterior, se tiene que:
+\lang english
+
+\begin_inset Formula 
+\[
+\max\left(\left|u_{i}+v_{i}\right|\right)\neq\max\left(\left|v_{i}\right|\right)+\max\left(\left|u_{i}\right|\right)
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-por lo tanto cumple la homogeneidad
-\end_layout
-
-\begin_layout Standard
-- Se tiene 
-\begin_inset Newline newline
+por lo tanto no cumple la superposición y el sistema no es lineal.
+\begin_inset VSpace 3mm
 \end_inset
 
 
-\begin_inset Formula $L\left\{ \overrightarrow{u}+\overrightarrow{v}\right\} =\max\left(\left|u_{i}+v_{i}\right|\right)\neq\max\left(\left|v_{i}\right|\right)+\max\left(\left|u_{i}\right|\right)$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-por lo tanto no cumple la superposición.
 \end_layout
 
 \end_deeper
@@ -649,69 +840,110 @@ con
 \end_inset
 
 
-\begin_inset Newline newline
+\begin_inset VSpace 3mm
+\end_inset
+
+Se tiene que cumplir que: 
+\lang english
+
+\begin_inset Formula 
+\[
+L\left\{ \alpha\overrightarrow{x}\right\} =|\alpha|L\left\{ \overrightarrow{x}\right\} 
+\]
+
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
-
-- Sea 
+\lang spanish
+Desarrollando la propiedad anterior, y con 
 \begin_inset Formula $\overrightarrow{u}=\alpha\overrightarrow{x}$
 \end_inset
 
+ se tiene que:
+\lang english
 
-\begin_inset Newline newline
+\begin_inset Formula 
+\[
+\overrightarrow{w}\text{·}\alpha\overrightarrow{x}+b=\alpha\overrightarrow{(w}\text{·}\overrightarrow{x}+b)
+\]
+
 \end_inset
 
 
-\begin_inset Formula $g(\overrightarrow{u})=\overrightarrow{w}\text{·}\alpha\overrightarrow{x}+b=\alpha\overrightarrow{w}^{T}\overrightarrow{x}+b=\alpha(w_{1}x_{1}+w_{2}x_{2}+...+w_{n}x_{n})+b$
+\begin_inset Formula 
+\[
+\alpha\overrightarrow{w}^{T}\overrightarrow{x}+b=\alpha(\overrightarrow{w}^{T}\overrightarrow{x}+b)
+\]
+
 \end_inset
 
 
-\begin_inset Newline newline
+\begin_inset Formula 
+\[
+\alpha(w_{1}x_{1}+w_{2}x_{2}+...+w_{n}x_{n})+b\neq\alpha(w_{1}x_{1}+w_{2}x_{2}+...+w_{n}x_{n}+b)
+\]
+
 \end_inset
 
 
-\begin_inset Formula $\neq\alpha g(\overrightarrow{u})=\alpha\overrightarrow{(w}\text{·}\alpha\overrightarrow{x}+b)=\alpha(\overrightarrow{w}^{T}\overrightarrow{x}+b)=\alpha(w_{1}x_{1}+w_{2}x_{2}+...+w_{n}x_{n}+b)$
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+por lo tanto no cumple con la homogeneidad absoluta.
+\begin_inset VSpace 3mm
+\end_inset
+
+También se tiene que cumplir que: 
+\lang english
+
+\begin_inset Formula 
+\[
+L\left\{ \overrightarrow{u}+\overrightarrow{v}\right\} =L\left\{ \overrightarrow{u}\right\} +L\left\{ \overrightarrow{v}\right\} 
+\]
+
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
+\lang spanish
+Desarrollando la propiedad anterior, se tiene que:
+\lang english
 
-por lo tanto no cumple la homogeneidad
-\begin_inset Newline newline
-\end_inset
+\begin_inset Formula 
+\[
+\overrightarrow{w}\text{·}(\vec{u}+\vec{v})+b\neq(\overrightarrow{w}\text{·}(\vec{u})+b)+(\overrightarrow{w}\text{·}(\vec{v})+b)
+\]
 
-- Se tiene
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $L\left\{ \vec{u}+\vec{v}\right\} =\overrightarrow{w}\text{·}(\vec{u}+\vec{v})+b=\overrightarrow{w}^{T}(\vec{u}+\vec{v})+b=w_{1}(u_{1}+v_{1})+w_{2}(u_{2}+v_{2})+...+w_{n}(u_{n}+v_{n})+b$
 \end_inset
 
 
-\begin_inset Newline newline
+\begin_inset Formula 
+\[
+\overrightarrow{w}^{T}(\vec{u}+\vec{v})+b\neq(\overrightarrow{w}^{T}\text{·}(\vec{u})+b)+(\overrightarrow{w}^{T}\text{·}(\vec{v})+b)
+\]
+
 \end_inset
 
 
-\begin_inset Formula $\neq L\left\{ \vec{u}\right\} +L\left\{ \vec{v}\right\} =w_{1}u_{1}+w_{2}u_{2}+...+w_{n}u_{n}+b+w_{1}v_{1}+w_{2}v_{2}+...+w_{n}v_{n}+b=$
+\begin_inset Formula 
+\[
+w_{1}(u_{1}+v_{1})+w_{2}(u_{2}+v_{2})+...+w_{n}(u_{n}+v_{n})+b\neq w_{1}(u_{1}+v_{1})+w_{2}(u_{2}+v_{2})+...+w_{n}(u_{n}+v_{n})+2b
+\]
+
 \end_inset
 
 
-\begin_inset Newline newline
+\end_layout
+
+\begin_layout Standard
+por lo tanto no cumple la superposición y el sistema no es lineal.
+\begin_inset VSpace 3mm
 \end_inset
 
 
-\begin_inset Formula $w_{1}(u_{1}+v_{1})+w_{2}(u_{2}+v_{2})+...+w_{n}(u_{n}+v_{n})+2b$
-\end_inset
+\end_layout
 
- por lo tanto no cumple la superposición.
-\begin_inset Newline newline
-\end_inset
-
+\begin_layout Standard
 d.1.) Para que el sistema sea lineal se debe agregar un elemento más al vector
  w, el elemento debe tener un valor de uno.
  Adicionalmente, los arreglos de entrada deben contener un elemento más
@@ -719,6 +951,7 @@ d.1.) Para que el sistema sea lineal se debe agregar un elemento más al vector
  
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Section
 Vectores (20 puntos)
@@ -754,14 +987,13 @@ Usando Python grafique los siguientes vectores
 , usando la función quiver3.
 \end_layout
 
-\begin_layout Enumerate
-Demuestre cuales de los vectores anteriores son unitarios.
- 
+\begin_deeper
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-NINGUNO ES UNITARIO!
+FALTA ADJUNTAR LA GRAFICA DE LOS VECTORES!
 \end_layout
 
 \end_inset
@@ -769,6 +1001,143 @@ NINGUNO ES UNITARIO!
 
 \end_layout
 
+\end_deeper
+\begin_layout Enumerate
+Demuestre cuales de los vectores anteriores son unitarios.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Para el vector 
+\begin_inset Formula $\vec{v}_{1}=\begin{bmatrix}-0.3\\
+0.8\\
+0.1
+\end{bmatrix}$
+\end_inset
+
+:
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Hay que demostrar que:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+\left\Vert \vec{v}_{1}\right\Vert =1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sqrt{\sum_{i=1}^{2}|v_{i}|^{2}}=\sqrt{(-0.3)^{2}+(0.8)^{2}+(0.1)^{2}}=\sqrt{0.09+0.64+0.01}=\sqrt{0.74}\sim0.86
+\]
+
+\end_inset
+
+∴ No es unitario.
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Para el vector 
+\begin_inset Formula $\vec{v}_{2}=\begin{bmatrix}0.5\\
+0.2\\
+0.4
+\end{bmatrix}$
+\end_inset
+
+:
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Hay que demostrar que:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+\left\Vert \vec{v}_{2}\right\Vert =1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sqrt{\sum_{i=1}^{2}|v_{i}|^{2}}=\sqrt{(0.5)^{2}+(0.2)^{2}+(0.4)^{2}}=\sqrt{0.25+0.04+0.16}=\sqrt{0.45}\sim0.67
+\]
+
+\end_inset
+
+∴ No es unitario.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Para el vector 
+\begin_inset Formula $\vec{v}_{3}=\begin{bmatrix}\frac{1}{\sqrt{2}}\\
+\frac{-1}{\sqrt{2}}\\
+0
+\end{bmatrix}$
+\end_inset
+
+:
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Hay que demostrar que:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+\left\Vert \vec{v}_{3}\right\Vert =1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sqrt{\sum_{i=1}^{2}|v_{i}|^{2}}=\sqrt{\left(\frac{1}{\sqrt{2}}\right)^{2}+\left(\frac{-1}{\sqrt{2}}\right)^{2}+(0)^{2}}=\sqrt{0.5+0.5+0}=\sqrt{1}=1
+\]
+
+\end_inset
+
+∴ Sí es unitario.
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Enumerate
 Calcule el ángulo en grados, entre los vectores 
 \begin_inset Formula $\vec{v}_{1}$
@@ -799,20 +1168,6 @@ y
 Pytorch
 \series default
 .
-  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Angle between v1=tensor([-0.9000, 0.7000, 0.2000]) and v2=tensor([0.4000, 0.1000,
- 0.4000]) : tensor(1.8921) Angle between v2=tensor([0.4000, 0.1000, 0.4000])
- and v3=tensor([3., 5., 7.]) : tensor(0.5358) Angle between v1=tensor([-0.9000,
- 0.7000, 0.2000]) and v3=tensor([3., 5., 7.]) : tensor(1.3606)
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Enumerate
@@ -865,66 +1220,209 @@ y
 Pytorch
 \series default
 .
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
+\end_deeper
 \begin_layout Enumerate
-Investigue como implementar en pytorch tal computo en GPU, escribiendo en
- el presente reporte los pasos para realizar tal cómputo en el GPU (usando
- google colab), y diseñe la siguiente prueba:
+Propiedades del producto punto: demuestre lo siguiente.
+ Además, muestrelo con una implementación en Pytorch, usando como entrada
+ un arreglo de 50 arreglos generados al azar, adjunte un pantallazo con
+ la salida de la comparación del resultado a ambos lados de la igualdad,
+ o en su defecto, demuestre el no cumplimiento de la propiedad con un contra-
+ ejemplo.
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-Cree 
-\begin_inset Formula $m$
+Conmutatividad del producto punto 
+\begin_inset Formula $\vec{u}\cdot\vec{v}=\vec{v}\cdot\vec{u}$
 \end_inset
 
- vectores de 
-\begin_inset Formula $n$
+
+\begin_inset VSpace 3mm
 \end_inset
 
- dimensiones aleatorios, y escoga al menos 3 valores distintos de 
-\begin_inset Formula $m$
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Para el vector 
+\begin_inset Formula $\vec{u}=\begin{bmatrix}u_{1}\\
+u_{2}\\
+.\\
+.\\
+u_{n}
+\end{bmatrix}$
+\end_inset
+
+ y el vector 
+\begin_inset Formula $\vec{v}=\begin{bmatrix}v_{1}\\
+v_{2}\\
+.\\
+.\\
+v_{n}
+\end{bmatrix}$
+\end_inset
+
+:
+\lang english
+
+\begin_inset Formula 
+\[
+\overrightarrow{u}^{T}\cdot\overrightarrow{v}=\overrightarrow{v}^{T}\cdot\overrightarrow{u}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+[\begin{array}{ccccc}
+u_{1} & u_{2} & . & . & u_{n}\end{array}]\cdot\begin{bmatrix}v_{1}\\
+v_{2}\\
+.\\
+.\\
+v_{n}
+\end{bmatrix}=[\begin{array}{ccccc}
+v_{1} & v_{2} & . & . & v_{n}\end{array}]\cdot\begin{bmatrix}u_{1}\\
+u_{2}\\
+.\\
+.\\
+u_{n}
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{i=1}^{n}u_{i}\cdot v_{i}=\sum_{i=1}^{n}v_{i}\cdot u_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Se logra observar como 
+\begin_inset Formula $u_{i}\cdot v_{i}=v_{i}\cdot u_{i}$
+\end_inset
+
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+No asociatividad del producto punto 
+\begin_inset Formula $\vec{u}\cdot(\vec{v}\cdot\vec{w})\neq(\vec{u}\cdot\vec{v})\cdot\vec{w}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Tomando 
+\begin_inset Formula $\vec{u}=\begin{bmatrix}1\\
+2\\
+3
+\end{bmatrix},\vec{v}=\begin{bmatrix}2\\
+3\\
+4
+\end{bmatrix},\vec{w}=\begin{bmatrix}5\\
+6\\
+7
+\end{bmatrix}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Obteniendo el producto punto de 
+\begin_inset Formula $\vec{v}\cdot\vec{w}$
 \end_inset
 
  y 
-\begin_inset Formula $n$
+\begin_inset Formula $\vec{u}\cdot\vec{v}$
 \end_inset
 
- para comparar la velocidad de procesamiento en GPU y CPU 
-\begin_inset Note Note
-status open
+:
+\lang english
 
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename imgs/tiempos.png
+\begin_inset Formula 
+\[
+\vec{v}\cdot\vec{w}=\sum_{i=1}^{n}v_{i}\cdot w_{i}=(2\cdot5)+(3\cdot6)+(4\cdot7)=56
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vec{u}\cdot\vec{v}=\sum_{i=1}^{n}u_{i}\cdot v_{i}=(1\cdot2)+(2\cdot3)+(3\cdot4)=20
+\]
 
 \end_inset
 
 
 \end_layout
 
+\begin_layout Standard
+
+\lang english
+Calculando 
+\begin_inset Formula $\vec{u}\cdot(\vec{v}\cdot\vec{w})$
+\end_inset
+
+ y 
+\begin_inset Formula $(\vec{u}\cdot\vec{v})\cdot\vec{w}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\begin{bmatrix}1\\
+2\\
+3
+\end{bmatrix}\cdot56=20\cdot\begin{bmatrix}5\\
+6\\
+7
+\end{bmatrix}
+\]
+
 \end_inset
 
 
-\begin_inset Note Note
-status open
+\begin_inset Formula 
+\[
+\begin{bmatrix}56\\
+112\\
+168
+\end{bmatrix}\neq\begin{bmatrix}100\\
+120\\
+140
+\end{bmatrix}
+\]
 
-\begin_layout Plain Layout
-FALTA CAMBIAAAR
+\end_inset
+
+
 \end_layout
 
+\begin_layout Standard
+∴ Se observa como ambos vectores son diferentes y se demuestra la no asociativid
+ad del producto punto.
+\begin_inset VSpace 3mm
 \end_inset
 
 
@@ -932,48 +1430,1740 @@ FALTA CAMBIAAAR
 
 \end_deeper
 \end_deeper
-\begin_layout Enumerate
+\begin_layout Section
+La distancia de Minkowski como índice de error
+\end_layout
 
-\series bold
-(5 puntos)
-\series default
- Demuestre que si dos vectores 
-\begin_inset Formula $\vec{u},\vec{v}$
+\begin_layout Standard
+Explique la diferencia entre las métricas, analizándolo desde el punto de
+ vista de la sensibilidad a los valores atípicos.
+ La Tabla 1 muestra 3 particiones del set de datos, las cuales le ayudarán
+ a responder entonces la pregunta ¿cuál métrica es más sensible a los valores
+ atípicos? Use como apoyo el cálculo en Pytorch del MAE y el RMSE de los
+ datos pendientes (?) en la tabla 1.
+ Realice el cálculo de forma matricial, prescindiendo al máximo de estructuras
+ de repetición.
+\begin_inset VSpace 3mm
 \end_inset
 
- son paralelos, entonces 
-\begin_inset Formula $\overrightarrow{u}=k\overrightarrow{v}$
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+i
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $t_{i}$
 \end_inset
 
- 
-\begin_inset Note Note
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\widetilde{t}_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left|\widetilde{t}_{i}-t_{i}\right|$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $(\widetilde{t}_{i}-t_{i})^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Primer conjunto de muestras
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+i
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $t_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\widetilde{t}_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left|\widetilde{t}_{i}-t_{i}\right|$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $(\widetilde{t}_{i}-t_{i})^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+32
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+29
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+41
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+38
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Segundo conjunto de muestras
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-revisar, pero sacando la norma de 
-\begin_inset Formula $\overrightarrow{u}=k\overrightarrow{v}$
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+i
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $t_{i}$
 \end_inset
 
- se puede tratar de llegar a ello
-\begin_inset Graphics
-	filename imgs/demo.png
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\widetilde{t}_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left|\widetilde{t}_{i}-t_{i}\right|$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $(\widetilde{t}_{i}-t_{i})^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+31
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+31
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+41
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+41
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+62
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+62
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+73
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+73
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+28
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+29
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+400
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
- 
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tercer conjunto de muestras
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Funciones multivariable (15 puntos)
 \end_layout
 
 \begin_layout Enumerate
-
-\series bold
-(10 puntos)
-\series default
- Un hiperplano 
+Un hiperplano 
 \begin_inset Formula $f$
 \end_inset
 
@@ -1002,230 +3192,23 @@ revisar, pero sacando la norma de
 
 \begin_deeper
 \begin_layout Enumerate
-Determine la ecuación de un plano paralelo 
-\begin_inset Formula $f_{2}$
-\end_inset
-
- al plano 
-\begin_inset Formula $f_{1}$
-\end_inset
-
- con pesos 
+Tomese 
 \begin_inset Formula $\vec{w}_{1}=\begin{bmatrix}0.7\\
 0.4
 \end{bmatrix}$
 \end_inset
 
-, reportando los pesos 
-\begin_inset Formula $\vec{w}_{2}$
-\end_inset
-
- y la ecuación en su forma vectorial 
-\lang english
-
-\begin_inset Formula $\vec{n}\cdot\overrightarrow{P_{0}P_{1}}=0,$
-\end_inset
-
- con 
-\begin_inset Formula $\vec{n}$
-\end_inset
-
- el vector normal a tal plano, 
-\begin_inset Formula $P_{0}$
-\end_inset
-
- y 
-\begin_inset Formula $P$
-\end_inset
-
- puntos sobre el mismo.
- Un vector normal 
-\begin_inset Formula $\vec{n}\in\mathbb{R}^{m}$
-\end_inset
-
- a dos vectores 
-\begin_inset Formula $\vec{v}\in\mathbb{R}^{m}$
-\end_inset
-
- y 
-\begin_inset Formula $\vec{u}\in\mathbb{R}^{m}$
-\end_inset
-
- se obtiene en términos del producto cruz como 
-\begin_inset Formula $\vec{n}=\vec{v}\times\vec{u}$
-\end_inset
-
-, el cual se define a continuación (con 
-\begin_inset Formula $A_{\backslash i}$
-\end_inset
-
- el resultado de eliminar la columna 
-\begin_inset Formula $i$
-\end_inset
-
- de la matriz 
-\begin_inset Formula $A$
-\end_inset
-
-): 
-\lang spanish
-
-\begin_inset Formula 
-\[
-\vec{n}=\textrm{det}\left(A_{\backslash1}\right)\hat{i}-\textrm{det}\left(A_{\backslash2}\right)\hat{j}+\textrm{det}\left(A_{\backslash3}\right)\hat{k}
-\]
-
-\end_inset
-
-con 
-\begin_inset Formula $A=\begin{bmatrix}- & \vec{v} & -\\
-- & \vec{u} & -
-\end{bmatrix}$
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Grafique ambos planos en MATLAB o con Matplotlib en Python, basándose en
- la función 
-\emph on
-surf.
- 
-\end_layout
-
-\begin_layout Enumerate
-Calcule las curvas de nivel en 
-\begin_inset Formula $z=2$
-\end_inset
-
-, y expreselas en términos de una ecuación de la recta, de forma paramétrica
- 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
-
-\begin_inset Formula $t\,\vec{v}$
-\end_inset
-
-
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-\lang spanish
-.
-\end_layout
-
-\begin_layout Enumerate
-Calcule el vector gradiente para ambos planos 
-\begin_inset Formula $\nabla_{\overrightarrow{x}}f_{1}$
-\end_inset
-
-y 
-\begin_inset Formula $\nabla_{\overrightarrow{x}}f_{2}$
-\end_inset
-
-, y muestre que ambos vectores gradiente son paralelos.
-\end_layout
-
-\begin_layout Enumerate
-Muestre además que los vectores gradientes son perpendiculares con las curvas
- de nivel calculadas en el punto transanterior.
-\begin_inset Note Note
-status open
-
-\begin_layout Enumerate
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Section
-Funciones multivariable (15 puntos)
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Enumerate
-Funciones lineales multivariable: un hiperplano definido en un espacio 
-\begin_inset Formula $\mathbb{R}^{n+1}$
-\end_inset
-
- se puede expresar como una función con dominio 
-\begin_inset Formula $\vec{x}\in\mathbb{R}^{n}$
-\end_inset
-
- y codominio en 
-\begin_inset Formula $\mathbb{R}$
-\end_inset
-
- como sigue: 
-\begin_inset Formula $z=f\left(\vec{x}\right)=\vec{x}\cdot\vec{w}$
-\end_inset
-
-, con 
-\begin_inset Formula $\vec{w}\in\mathbb{R}^{n}$
-\end_inset
-
- el arreglo de coeficientes de tal funcional.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-veeeeeer
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Tómese 
-\begin_inset Formula $\vec{w}_{1}=\begin{bmatrix}0.5\\
-0.2
-\end{bmatrix}$
-\end_inset
-
- para la función 
+para la función 
 \begin_inset Formula $f_{1}$
 \end_inset
 
  y 
-\begin_inset Formula $\vec{w}_{2}=\begin{bmatrix}-0.1\\
-0.05
+\begin_inset Formula $\vec{w}_{1}=\begin{bmatrix}0.7\\
+0.4
 \end{bmatrix}$
 \end_inset
 
- para la función 
+para la función 
 \begin_inset Formula $f_{2}$
 \end_inset
 
@@ -1234,12 +3217,7 @@ Tómese
 \end_inset
 
  y codominio en ).
- Grafique ambos planos en MATLAB, usando la función 
-\emph on
-surf
-\emph default
-.
- 
+ Grafique ambos planos en Pytorch.
 \end_layout
 
 \begin_layout Enumerate
@@ -1249,7 +3227,7 @@ Exprese ambos planos en su forma vectorial
 \begin_inset Formula $\vec{n}\cdot\overrightarrow{P_{0}P_{1}}=0,$
 \end_inset
 
- con 
+con 
 \begin_inset Formula $\vec{n}$
 \end_inset
 
@@ -1307,224 +3285,23 @@ con
 \end_inset
 
 
-\lang english
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Para el primer plano:
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $P_{0}=(1,1,0.7)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $P_{1}=(0,0,0)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $P_{2}=(2,2,1.4)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $\overrightarrow{P_{0}P_{1}}=\begin{bmatrix}1\\
-1\\
-0.7
-\end{bmatrix}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $\overrightarrow{P_{0}P_{2}}=\begin{bmatrix}2\\
-5\\
-2
-\end{bmatrix}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $\begin{bmatrix}1 & 1 & 0.7\\
-2 & 5 & 2
-\end{bmatrix}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $\vec{n}=\overrightarrow{P_{0}P_{2}}\times\overrightarrow{P_{0}P_{1}}=\begin{bmatrix}1 & 0.7\\
-5 & 2
-\end{bmatrix}i-\begin{bmatrix}1 & 0.7\\
-2 & 2
-\end{bmatrix}j+\begin{bmatrix}1 & 1\\
-2 & 5
-\end{bmatrix}k=(2-3.5)i-(2-1.4)j+(5-2)k=-1.5i-0.6j+3k$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-
-\lang english
-Grafique los vectores normales de ambos planos usando la función 
-\emph on
-quiver3, 
-\emph default
-junto
-\emph on
- 
-\emph default
-con las superficies de los planos
-\emph on
-.
- 
-\emph default
-Demuestre numéricamente si tales planos son perpendiculares.
-\end_layout
-
-\begin_layout Enumerate
-Determine la ecuación de la recta formada por la intersección de ambos planos.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Los puntos que están en esa recta satisfacen:
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $0.5x+0.2y=-0.1x+0.05y$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Nos damos 
-\begin_inset Formula $x_{1}=1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $0.195y_{1}=-0.6\Rightarrow y_{1}=-3,077$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Nos damos 
-\begin_inset Formula $y_{2}=1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $0.195=-0.6x_{2}\Rightarrow x_{2}=-0.325$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-El vector es: 
-\begin_inset Formula $\overrightarrow{\left(x_{1},y_{1}\right)\left(x_{2},y_{2}\right)}=\left[1+0.325,1+3.077\right]=\left[1.325,4.077\right]$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-La ecuación vectorial de la recta es:
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\begin{equation}
-P=r\left(t\right)=\left(1,-3.077\right)+t\,\left[1.325,4.077\right],\label{eq:recta}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Defina y grafique una curva de nivel, como una intersección de los planos
- en cada nivel 
-\begin_inset Formula $z=c$
-\end_inset
-
- , para cada uno de los planos formados por 
-\begin_inset Formula $f_{1}$
-\end_inset
-
- y 
-\begin_inset Formula $f_{2}$
-\end_inset
-
-, y obtenga la ecuación de la recta para ambas curvas.
-\end_layout
-
-\begin_layout Enumerate
-Calcule los vectores gradiente para ambos funcionales y compruebe que tales
- vectores son ortogonales para las curvas de nivel calculadas en el apartado
- anterior.
 \end_layout
 
 \end_deeper
-\end_inset
-
-
-\end_layout
-
 \begin_layout Enumerate
-
-\series bold
-Derivadas parciales
-\series default
-: Para cada una de las siguientes funciones multivariable: grafique su superfici
-e, calcule el vector gradiente manualmente, evaluelo y grafique el vector
+Para cada una de las siguientes funciones multivariable: grafique su superficie,
+ calcule el vector gradiente manualmente, evaluelo y grafique el vector
  unitario en la dirección del gradiente para los dos puntos especificados
  (en la misma figura de la superficie) y calcule la magnitud de tal vector
  gradiente en cada punto.
- En general, ¿qué indica la magnitud del vector gradiente? Use MATLAB, Octave
- o Python.
- Finalmente calcule la matriz Hessiana para cada una.
+ Además calcule la matriz Hessiana.
+ En general, investigue ¿qué indica la magnitud del vector gradiente y la
+ matriz Hessiana?
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-\begin_inset Formula $z=f\left(x,y\right)=3x^{2}+2y^{4}$
+\begin_inset Formula $z=f\left(x,y\right)=x^{3}y^{2}+1$
 \end_inset
 
 , evaluación del gradiente en los puntos 
@@ -1536,720 +3313,33 @@ e, calcule el vector gradiente manualmente, evaluelo y grafique el vector
 \end_inset
 
 .
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-https://derivadas.es/derivadas-parciales/
-\end_layout
-
-\begin_layout Plain Layout
-otro ej general
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $\frac{df}{dx}=3x^{2}y^{2}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $\frac{df}{dy}=2x^{3}y$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $\nabla f_{P_{1}}=3*7.4^{2}*(-6.3)^{2}i+2*7.4^{3}*(-6.3)j=6520.3i-5105.8j$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula $\nabla f_{P_{1}}=\frac{6520.3}{\sqrt{6520^{2}+5105^{2}}}i-\frac{5105.8}{\sqrt{6520^{2}+5105^{2}}}j=0.7874i-0.6166j$
-\end_inset
-
- 
-\begin_inset Graphics
-	filename imgs/r12.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-x=-10:.1:10;  [X,Y] = meshgrid(x); Z = X.^3 .* Y.^2 + 1;  Z1 = Z.*0;  figure;
- surf(X,Y,Z);  shading flat  xlabel('x');  ylabel('y');  zlabel('z')  %surf(X,Y,
-Z1);  hold on;  M = [0  0.7874 ; 0  -0.6166];  plotv(M,'-');
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $z=f\left(x,y\right)=4x^{2}+2x+e^{2x}+5y^{2}+e^{3y}+1$
+\begin_inset Formula $z=f\left(x,y\right)=e^{x}+e^{y}+2x^{2}+4y+3$
 \end_inset
 
 , evaluación del gradiente en los puntos 
-\begin_inset Formula $P_{0}=\left(2,1\right)$
+\begin_inset Formula $P_{0}=\left(3.8,1.8\right)$
 \end_inset
 
  y 
-\begin_inset Formula $P_{1}=\left(5,7\right)$
-\end_inset
-
-.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename imgs/r4.png
-
-\end_inset
-
-
-\end_layout
-
+\begin_inset Formula $P_{1}=\left(6.2,7\right)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $z=f\left(x,y\right)=\sin\left(x^{2}\right)+x\cos\left(y^{3}\right)$
+\begin_inset Formula $z=f\left(x,y\right)=\ln\left(x^{2}+y^{2}\right)$
 \end_inset
 
 , evaluación del gradiente en los puntos 
-\begin_inset Formula $P_{0}=\left(-2,6\right)$
+\begin_inset Formula $P_{0}=\left(-2.4,6.7\right)$
 \end_inset
 
  y 
-\begin_inset Formula $P_{1}=\left(0,4\right)$
-\end_inset
-
-.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename imgs/r5.png
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\ln\left(x^{2}+y^{2}\right)+z=1$
-\end_inset
-
-, evaluación del gradiente en los puntos 
-\begin_inset Formula $P_{0}=\left(5.2,6.4\right)$
-\end_inset
-
- y 
-\begin_inset Formula $P_{1}=\left(5.2,2.3\right)$
-\end_inset
-
-.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename imgs/r6.png
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Section
-Matrices y calculo matricial (30 puntos)
-\end_layout
-
-\begin_layout Enumerate
-
-\series bold
-(20 puntos)
-\series default
- Demuestre que (En algunos ejercicios se recomienda usar la notación de
- filas y columnas compacta (filas y columnas en vectores), como la utilizada
- en el material del curso): 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-
-\lang english
-Si 
-\begin_inset Formula $\overrightarrow{x}\in\mathbb{R}^{n}$
-\end_inset
-
- y 
-\begin_inset Formula $A=\frac{\overrightarrow{x}\overrightarrow{x}^{T}}{\overrightarrow{x}^{T}\overrightarrow{x}}$
-\end_inset
-
-, entonces 
-\begin_inset Formula $A^{2}=A$
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\lang english
-Por asociatividad notacion de filas y columnas
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-
-\lang english
-Demuestre que si 
-\begin_inset Formula $A,B\in\mathbb{R}^{n\times n}$
-\end_inset
-
- son matrices 
-\series bold
-diagonales
-\series default
- y 
-\begin_inset Formula $ABAB=0_{n}$
-\end_inset
-
- , entonces 
-\begin_inset Formula $BABA=0_{n}$
-\end_inset
-
- con 
-\begin_inset Formula $0_{n}$
-\end_inset
-
- una matriz de ceros 
-\begin_inset Formula $0_{n}\in\mathbb{R}^{n\times n}$
-\end_inset
-
-.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\lang english
-calculoMatricialEjercicios.pdf 
-\begin_inset Graphics
-	filename imgs/resp222.png
-	lyxscale 50
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-
-\lang english
-Sean las matrices 
-\begin_inset Formula $A,B\in\mathbb{R}^{n\times n}$
-\end_inset
-
-, con 
-\begin_inset Formula $A+B=I$
-\end_inset
-
- y 
-\begin_inset Formula $AB=0_{n}$
-\end_inset
-
-, demuestre que 
-\begin_inset Formula $A^{2}=A$
-\end_inset
-
- y
-\begin_inset Formula $B^{2}=B$
-\end_inset
-
-.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\lang english
-Haciendo 
-\begin_inset Formula $\left(A+B\right)^{2}$
-\end_inset
-
-y usando la propiedad 
-\begin_inset Formula $AB=0_{n}$
-\end_inset
-
- es fácil verlo
-\end_layout
-
-\begin_layout Plain Layout
-
-\lang english
-\begin_inset Graphics
-	filename imgs/respwil1.png
-	lyxscale 50
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-
-\lang english
-Sea la matriz 
-\begin_inset Formula $A\in\mathbb{R}^{n\times n}$
-\end_inset
-
- simétrica y una matriz cualquiera (no puede asumir que es simétrica) 
-\begin_inset Formula $P\in\mathbb{R}^{n\times n}$
-\end_inset
-
-.
- Demuestre que la matriz 
-\begin_inset Formula $P^{T}AP$
-\end_inset
-
- es también simétrica.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\lang english
-La propiedad de la simetría establece que 
-\begin_inset Formula $A=A^{T}$
-\end_inset
-
-, por lo que deben usar esa ecuación para 
-\begin_inset Formula $P^{T}AP$
-\end_inset
-
-, trasponiendola y usando las propiedades de la traspuesta sale.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-
-\series bold
-(10 puntos)
-\series default
-\lang english
- Cálculo matricial:
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-
-\lang english
-Sea 
-\begin_inset Formula $f\left(\vec{x}\right)=\frac{1}{2}\vec{x}^{T}A\vec{x}+\vec{b}^{T}\vec{x}+\vec{b}\cdot\vec{x}$
-\end_inset
-
- con 
-\begin_inset Formula $A$
-\end_inset
-
- una matriz simétrica, calcule 
-\begin_inset Formula $\nabla f\left(\vec{x}\right)$
-\end_inset
-
-.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename imgs/r2.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Ax+2b en el caso modificado
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-
-\lang english
-Sea 
-\begin_inset Formula $f\left(\vec{x}\right)=\vec{b}^{T}\vec{x}$
-\end_inset
-
-, con 
-\begin_inset Formula $\vec{x},\vec{b}\in\mathbb{R}^{3}$
-\end_inset
-
-, y 
-\begin_inset Formula $\vec{b}=\left[b_{1},b_{2},b_{3}\right]^{T}$
-\end_inset
-
- un arreglo de valores conocidos, obtenga los valores de las entradas de
- 
-\begin_inset Formula $\vec{x}=\left[x_{1},x_{2},x_{3}\right]^{T}$
-\end_inset
-
-, resolviendo la siguiente ecuación diferencial:
-\begin_inset Formula 
-\[
-\nabla_{\vec{x}}f=A\vec{x}+\overrightarrow{b}\cdot\overrightarrow{b}
-\]
-
-\end_inset
-
-con 
-\begin_inset Formula $A=\begin{bmatrix}1 & 0 & 0\\
-0 & 1 & 0\\
-0 & 0 & 1
-\end{bmatrix}$
-\end_inset
-
-.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\lang english
-\begin_inset Formula $b1-b1^{2}-b2^{2}=x1yb2-b1^{2}-b2^{2}=x2$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-
-\lang english
-Tómese a la función 
-\begin_inset Formula $\overrightarrow{g}\left(\overrightarrow{x}\right)$
-\end_inset
-
- como una función con salida multivaluada, es decir, de múltiples salidas,
- y también, múltiples entradas.
- En este caso 
-\begin_inset Formula $\overrightarrow{x}\in\mathbb{R}^{3}$
-\end_inset
-
-y 
-\begin_inset Formula $\overrightarrow{g}\in\mathbb{R}^{2}$
-\end_inset
-
-, dada por: 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\lang english
-\begin_inset Graphics
-	filename imgs/jacobiano.png
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\overrightarrow{g}=\left[x_{1}^{2}+\sin\left(3x_{2}\right),\;e^{x_{2}}+\ln\left(x_{1}\right)\right]^{T}
-\]
-
-\end_inset
-
-Investigue y explique en qué consiste el 
-\series bold
-Jacobiano
-\series default
- de una función de múltiples salidas, y calculelo para la función 
-\begin_inset Formula $\overrightarrow{g}\left(\overrightarrow{x}\right)$
-\end_inset
-
-.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\lang english
-Jacobiano 
-\begin_inset Graphics
-	filename imgs/jacobiano2.png
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Section
-Probabilidades (15 puntos)
-\end_layout
-
-\begin_layout Enumerate
-
-\series bold
-(10 puntos)
-\series default
- Utilizando las funciones similares a 
-\emph on
-imshow 
-\emph default
-y 
-\emph on
-surf 
-\emph default
-de MATLAB y Octave pero en 
-\series bold
-Python usando la librería pytorch
-\series default
-, (en cada figura incluya las dos gráficas), grafique, de ser posible, las
- siguientes funciones Gaussianas 
-\begin_inset Formula $f:\mathbb{R}^{2}\rightarrow\mathbb{R}$
-\end_inset
-
-, con los siguientes parámetros.
- Programe la función manualmente usando la definición de la función Gaussiana
- multi-variable vista en clase:
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset Formula $\Sigma=\begin{bmatrix}25 & 0\\
-0 & 5
-\end{bmatrix}$
-\end_inset
-
-, 
-\begin_inset Formula $\vec{\mu}=\begin{bmatrix}4\\
-7
-\end{bmatrix}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\Sigma=\begin{bmatrix}8 & 0\\
-0 & 0.5
-\end{bmatrix}$
-\end_inset
-
-, 
-\begin_inset Formula $\vec{\mu}=\begin{bmatrix}8\\
-1
-\end{bmatrix}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\Sigma=\begin{bmatrix}2 & -3\\
--3 & 2
-\end{bmatrix}$
-\end_inset
-
-, 
-\begin_inset Formula $\vec{\mu}=\begin{bmatrix}1\\
-2
-\end{bmatrix}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\Sigma=\begin{bmatrix}1 & 25\\
-25 & 2
-\end{bmatrix}$
-\end_inset
-
-, 
-\begin_inset Formula $\vec{\mu}=\begin{bmatrix}5\\
-2
-\end{bmatrix}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-y comente los efectos que ejerce 
-\series bold
-cada 
-\series default
-desviación estándar 
-\begin_inset Formula $\Sigma_{1,1}=\sigma_{1}$
-\end_inset
-
- y 
-\begin_inset Formula $\Sigma_{2,2}=\sigma_{2}$
-\end_inset
-
- , además de 
-\series bold
-cada 
-\series default
-covarianza 
-\begin_inset Formula $\Sigma_{1,2}$
-\end_inset
-
- y 
-\begin_inset Formula $\Sigma_{2,1}$
-\end_inset
-
- en la forma de la función de densidad Gaussiana.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-varianza hace mas anchas las campanas, covarianza hace girar los datos
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-En 
-\series bold
-Python, usando la librería Pytorch
-\series default
-, Genere dos conjuntos de datos con 
-\begin_inset Formula $N=200$
-\end_inset
-
- puntos en un espacio 
-\begin_inset Formula $\mathbb{R}^{2}$
-\end_inset
-
- a partir de una distribución Gaussiana, donde el primer cúmulo de datos
- se tenga que 
-\begin_inset Formula $\Sigma_{1}=\begin{bmatrix}15 & 2\\
-2 & 1
-\end{bmatrix}$
-\end_inset
-
- y para el segundo cúmulo de datos 
-\begin_inset Formula $\Sigma_{1}=\begin{bmatrix}3 & 1\\
-1 & 2
-\end{bmatrix}$
-\end_inset
-
-, en Pytorch, el primero centrado en 
-\begin_inset Formula $\vec{\mu}_{1}=\begin{bmatrix}1 & 2\end{bmatrix}$
-\end_inset
-
- y el segundo en 
-\begin_inset Formula $\vec{\mu}_{2}=\begin{bmatrix}15 & 12\end{bmatrix}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Grafique los resultados usando la función 
-\emph on
-scatter
-\emph default
- o similar en Python, con símbolos que dejen claro la pertenencia a cada
- uno de los cúmulos.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename imgs/dist.png
-
-\end_inset
-
-
-\end_layout
-
+\begin_inset Formula $P_{1}=\left(0,4.3\right)$
 \end_inset
 
 

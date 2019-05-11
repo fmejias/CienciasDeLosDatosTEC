@@ -3299,5 +3299,52 @@ Para cada una de las siguientes funciones multivariable: grafique su superficie,
  matriz Hessiana?
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $z=f\left(x,y\right)=x^{3}y^{2}+1$
+\end_inset
+
+, evaluación del gradiente en los puntos 
+\begin_inset Formula $P_{0}=\left(0,0\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $P_{1}=\left(7.4,-6.3\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=f\left(x,y\right)=e^{x}+e^{y}+2x^{2}+4y+3$
+\end_inset
+
+, evaluación del gradiente en los puntos 
+\begin_inset Formula $P_{0}=\left(3.8,1.8\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $P_{1}=\left(6.2,7\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=f\left(x,y\right)=\ln\left(x^{2}+y^{2}\right)$
+\end_inset
+
+, evaluación del gradiente en los puntos 
+\begin_inset Formula $P_{0}=\left(-2.4,6.4\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $P_{1}=\left(5.2,2.3\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
