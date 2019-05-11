@@ -1003,6 +1003,36 @@ FALTA ADJUNTAR LA GRAFICA DE LOS VECTORES!
 
 \end_deeper
 \begin_layout Enumerate
+Escriba los vectores anteriores en términos de los vectores unitarios 
+\begin_inset Formula $\hat{i},\hat{j},\hat{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{v}_{1}=-0.3\hat{i}+0.8\hat{j}+0.1\hat{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{v}_{2}=0.5\hat{i}+0.2\hat{j}+0.4\hat{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{v}_{3}=\frac{1}{\sqrt{2}}i-\frac{1}{\sqrt{2}}\hat{j}+0\hat{k}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
 Demuestre cuales de los vectores anteriores son unitarios.
 \end_layout
 
@@ -1052,7 +1082,6 @@ Hay que demostrar que:
 
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 Para el vector 
 \begin_inset Formula $\vec{v}_{2}=\begin{bmatrix}0.5\\
@@ -1443,6 +1472,19 @@ Explique la diferencia entre las métricas, analizándolo desde el punto de
  datos pendientes (?) en la tabla 1.
  Realice el cálculo de forma matricial, prescindiendo al máximo de estructuras
  de repetición.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+FALTA ADJUNTAR CALCULO MATRICIAL CON PYTORCH Y EXPLICAR!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset VSpace 3mm
 \end_inset
 
@@ -3193,8 +3235,8 @@ Un hiperplano
 \begin_deeper
 \begin_layout Enumerate
 Tomese 
-\begin_inset Formula $\vec{w}_{1}=\begin{bmatrix}0.7\\
-0.4
+\begin_inset Formula $\vec{w}_{1}=\begin{bmatrix}0.5\\
+0.2
 \end{bmatrix}$
 \end_inset
 
@@ -3203,8 +3245,8 @@ para la función
 \end_inset
 
  y 
-\begin_inset Formula $\vec{w}_{1}=\begin{bmatrix}0.7\\
-0.4
+\begin_inset Formula $\vec{w}_{1}=\begin{bmatrix}-0.1\\
+0.05
 \end{bmatrix}$
 \end_inset
 
@@ -3218,6 +3260,16 @@ para la función
 
  y codominio en ).
  Grafique ambos planos en Pytorch.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+FALTA ADJUNTAR LA GRAFICA DE LOS PLANOS!
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -3285,8 +3337,250 @@ con
 \end_inset
 
 
+\begin_inset VSpace 3mm
+\end_inset
+
+
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+Para la función 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\vec{n_{1}}\cdot\overrightarrow{P_{0}P_{1}}=0,
+\]
+
+\end_inset
+
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para obtener 
+\begin_inset Formula $\vec{n_{1}}$
+\end_inset
+
+, evalúo la función 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+en (1,1), (2,1) y (2,2):
+\begin_inset Formula 
+\[
+f_{1}(1,1)=0.5(1)+0.2(1)=0.7
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{1}(2,1)=0.5(2)+0.2(1)=1.2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{1}(2,2)=0.5(2)+0.2(2)=1.4
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Obtengo los puntos:
+\begin_inset Formula 
+\[
+P_{0}=\left(1,1,0.7\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P_{1}=\left(2,1,1.2\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P_{2}=\left(2,2,1.4\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Calculo los vectores:
+\begin_inset Formula 
+\[
+\overrightarrow{P_{0}P_{1}}=\left[\begin{array}{c}
+2-1\\
+1-1\\
+1.2-0.7
+\end{array}\right]=\left[\begin{array}{c}
+1\\
+0\\
+0.5
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\overrightarrow{P_{0}P_{2}}=\left[\begin{array}{c}
+2-1\\
+2-1\\
+1.4-0.7
+\end{array}\right]=\left[\begin{array}{c}
+1\\
+1\\
+0.7
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sea la matriz 
+\begin_inset Formula $A=\left[\begin{array}{c}
+\overrightarrow{P_{0}P_{1}}\\
+\overrightarrow{P_{0}P_{2}}
+\end{array}\right]$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\vec{n_{1}}=\textrm{det}\left(A_{\backslash1}\right)\hat{i}-\textrm{det}\left(A_{\backslash2}\right)\hat{j}+\textrm{det}\left(A_{\backslash3}\right)\hat{k}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A=\left[\begin{array}{ccc}
+1 & 0 & 0.5\\
+1 & 1 & 0.7
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vec{n_{1}}=\textrm{det}\left(\left[\begin{array}{cc}
+0 & 0.5\\
+1 & 0.7
+\end{array}\right]\right)\hat{i}-\textrm{det}\left(\left[\begin{array}{cc}
+1 & 0.5\\
+1 & 0.7
+\end{array}\right]\right)\hat{j}+\textrm{det}\left(\left[\begin{array}{cc}
+1 & 0\\
+1 & 1
+\end{array}\right]\right)\hat{k}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vec{n_{1}}=-0.5\hat{i}-0.2\hat{j}+\hat{k}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vec{n_{1}}=\left[\begin{array}{c}
+-0.5\\
+-0.2\\
+1
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La ecuación de un plano que pasa por 
+\begin_inset Formula $P_{0}=\left(x_{0},y_{0},z_{0}\right)$
+\end_inset
+
+, normal a 
+\begin_inset Formula $\vec{n}=A\hat{i}+B\hat{j}+C\hat{k}$
+\end_inset
+
+es:
+\begin_inset Formula 
+\[
+\vec{n_{1}}\cdot\overrightarrow{P_{0}P}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[\begin{array}{ccc}
+A & B & C\end{array}\right]\cdot\left[\begin{array}{c}
+x-x_{0}\\
+y-y_{0}\\
+z-z_{0}
+\end{array}\right]=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A(x-x_{0})+B(y-y_{0})+B(z-z_{0})=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-0.5(x-x_{0})+-0.2(y-y_{0})+(z-z_{0})=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Para cada una de las siguientes funciones multivariable: grafique su superficie,
@@ -3297,7 +3591,294 @@ Para cada una de las siguientes funciones multivariable: grafique su superficie,
  Además calcule la matriz Hessiana.
  En general, investigue ¿qué indica la magnitud del vector gradiente y la
  matriz Hessiana?
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+FALTA ADJUNTAR LA GRAFICA DEL VECTOR UNITARIO!
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $z=f\left(x,y\right)=x^{3}y^{2}+1$
+\end_inset
+
+, evaluación del gradiente en los puntos 
+\begin_inset Formula $P_{0}=\left(0,0\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $P_{1}=\left(7.4,-6.3\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Calculando el vector gradiente manualmente:
+\begin_inset Formula 
+\[
+\nabla f=\frac{\delta f}{\delta x}\hat{i}+\frac{\delta f}{\delta y}\hat{j}=(3x^{2}y^{2})\hat{i}+(2x^{3}y)\hat{j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Evaluando en 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\nabla f_{(0,0)}=(0)\hat{i}+(0)\hat{j}
+\]
+
+\end_inset
+
+Evaluando en 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\nabla f_{(7.4,-6.3)}=(6520.27)\hat{i}+(-5105.82)\hat{j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Calculando la magnitud de los gradientes evaluados:
+\begin_inset Formula 
+\[
+\left\Vert \nabla f_{(0,0)}\right\Vert =0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert \nabla f_{(7.4,-6.3)}\right\Vert =\sqrt{(6520.27)^{2}+(-5105.82)^{2}}=8281.50
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Normalizando el resultado de 
+\begin_inset Formula $\nabla f_{(7.4,-6.3)}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left[\begin{array}{c}
+\frac{6520.27}{8281.50}\\
+\frac{-5105.82}{8281.50}
+\end{array}\right]=\left[\begin{array}{c}
+0.787329\\
+-0.616533
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La matriz Hessiana sería:
+\begin_inset Formula 
+\[
+H_{f(x,y)}=\left[\begin{array}{cc}
+\frac{\delta f}{\delta x^{2}} & \frac{\delta f}{\delta x\delta y}\\
+\frac{\delta f}{\delta y\delta x} & \frac{\delta f}{\delta y^{2}}
+\end{array}\right]=\left[\begin{array}{cc}
+6xy^{2} & 6x^{2}y\\
+6x^{2}y & 2x^{3}
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $z=f\left(x,y\right)=e^{x}+e^{y}+2x^{2}+4y+3$
+\end_inset
+
+, evaluación del gradiente en los puntos 
+\begin_inset Formula $P_{0}=\left(3.8,1.8\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $P_{1}=\left(6.2,7\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Calculando el vector gradiente manualmente:
+\begin_inset Formula 
+\[
+\nabla f=\frac{\delta f}{\delta x}\hat{i}+\frac{\delta f}{\delta y}\hat{j}=(e^{x}+4x)\hat{i}+(e^{y}+4)\hat{j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Evaluando en 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\nabla f_{(3.8,1.8)}=(59.90)\hat{i}+(10.05)\hat{j}
+\]
+
+\end_inset
+
+Evaluando en 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\nabla f_{(6.2,7)}=(517.55)\hat{i}+(1100.63)\hat{j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Calculando la magnitud de los gradientes evaluados:
+\begin_inset Formula 
+\[
+\left\Vert \nabla f_{(3.8,1.8)}\right\Vert =\sqrt{(59.90)^{2}+(10.05)^{2}}=60.74
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert \nabla f_{(6.2,7)}\right\Vert =\sqrt{(517.55)^{2}+(1100.63)^{2}}=1216.24
+\]
+
+\end_inset
+
+Normalizando el resultado de 
+\begin_inset Formula $\nabla f_{(3.8,1.8)}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left[\begin{array}{c}
+\frac{59.90}{60.74}\\
+\frac{10.05}{60.74}
+\end{array}\right]=\left[\begin{array}{c}
+0.986170\\
+0.165459
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Normalizando el resultado de 
+\begin_inset Formula $\nabla f_{(6.2,7)}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left[\begin{array}{c}
+\frac{517.55}{1216.24}\\
+\frac{1100.63}{1216.24}
+\end{array}\right]=\left[\begin{array}{c}
+0.425532\\
+0.904944
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La matriz Hessiana sería:
+\begin_inset Formula 
+\[
+H_{f(x,y)}=\left[\begin{array}{cc}
+\frac{\delta f}{\delta x^{2}} & \frac{\delta f}{\delta x\delta y}\\
+\frac{\delta f}{\delta y\delta x} & \frac{\delta f}{\delta y^{2}}
+\end{array}\right]=\left[\begin{array}{cc}
+e^{x}+4 & 0\\
+0 & e^{y}
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $z=f\left(x,y\right)=\ln\left(x^{2}+y^{2}\right)$
+\end_inset
+
+, evaluación del gradiente en los puntos 
+\begin_inset Formula $P_{0}=\left(-2.4,6.7\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $P_{1}=\left(0,4.3\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
