@@ -989,11 +989,40 @@ Usando Python grafique los siguientes vectores
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float figure
+placement H
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-FALTA ADJUNTAR LA GRAFICA DE LOS VECTORES!
+\align center
+\begin_inset Graphics
+	filename Images/Ejercicio2_Vectores.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfica de los vectores 
+\begin_inset Formula $\vec{v}_{1},\vec{v}_{2},\vec{v}_{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -1197,8 +1226,37 @@ y
 Pytorch
 \series default
 .
+\begin_inset VSpace 3mm
+\end_inset
+
+
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+Salida de Jupyter:
+\end_layout
+
+\begin_layout Standard
+a) Angulo en grados entre v1=tensor([-0.3000, 0.8000, 0.1000]) y v2=tensor([0.5000,
+ 0.2000, 0.4000]): tensor(85.0293)
+\end_layout
+
+\begin_layout Standard
+b) Angulo en grados entre v2=tensor([0.5000, 0.2000, 0.4000]) y v3=tensor([
+ 0.7071, -0.7071, 0.0000]): tensor(71.5650)
+\end_layout
+
+\begin_layout Standard
+c) Angulo en grados entre v1=tensor([-0.3000, 0.8000, 0.1000]) y v3=tensor([
+ 0.7071, -0.7071, 0.0000]): tensor(154.7150)
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Calcule la distancia en 
 \lang english
@@ -1249,6 +1307,45 @@ y
 Pytorch
 \series default
 .
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Salida de Jupyter:
+\end_layout
+
+\begin_layout Standard
+Distancia Euclideana entre v1=tensor([-0.3000, 0.8000, 0.1000]) y v2=tensor([0.5000,
+ 0.2000, 0.4000]): tensor(1.0440) Distancia Euclideana usando torch.norm entre
+ v1=tensor([-0.3000, 0.8000, 0.1000]) y v2=tensor([0.5000, 0.2000, 0.4000]): tensor(1.0
+440) Distancia Manhattan entre v1=tensor([-0.3000, 0.8000, 0.1000]) y v2=tensor([0.5
+000, 0.2000, 0.4000]): tensor(1.7000) Distancia Manhattan usando torch.norm
+ entre v1=tensor([-0.3000, 0.8000, 0.1000]) y v2=tensor([0.5000, 0.2000, 0.4000]):
+ tensor(1.7000) Distancia Infinita entre v1=tensor([-0.3000, 0.8000, 0.1000])
+ y v2=tensor([0.5000, 0.2000, 0.4000]): tensor(0.8000)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Distancia Euclideana entre v2=tensor([0.5000, 0.2000, 0.4000]) y v3=tensor([
+ 0.7071, -0.7071, 0.0000]): tensor(1.0128) Distancia Euclideana usando torch.norm
+ entre v2=tensor([0.5000, 0.2000, 0.4000]) y v3=tensor([ 0.7071, -0.7071, 0.0000]):
+ tensor(1.0128) Distancia Manhattan entre v2=tensor([0.5000, 0.2000, 0.4000])
+ y v3=tensor([ 0.7071, -0.7071, 0.0000]): tensor(1.5142) Distancia Manhattan
+ usando torch.norm entre v2=tensor([0.5000, 0.2000, 0.4000]) y v3=tensor([ 0.7071,
+ -0.7071, 0.0000]): tensor(1.5142) Distancia Infinita entre v2=tensor([0.5000,
+ 0.2000, 0.4000]) y v3=tensor([ 0.7071, -0.7071, 0.0000]): tensor(0.9071)
+\end_layout
+
+\begin_layout Enumerate
+Distancia Euclideana entre v1=tensor([-0.3000, 0.8000, 0.1000]) y v3=tensor([
+ 0.7071, -0.7071, 0.0000]): tensor(1.8154) Distancia Euclideana usando torch.norm
+ entre v1=tensor([-0.3000, 0.8000, 0.1000]) y v3=tensor([ 0.7071, -0.7071, 0.0000]):
+ tensor(1.8154) Distancia Manhattan entre v1=tensor([-0.3000, 0.8000, 0.1000])
+ y v3=tensor([ 0.7071, -0.7071, 0.0000]): tensor(2.6142) Distancia Manhattan
+ usando torch.norm entre v1=tensor([-0.3000, 0.8000, 0.1000]) y v3=tensor([
+ 0.7071, -0.7071, 0.0000]): tensor(2.6142) Distancia Infinita entre v1=tensor([-0.300
+0, 0.8000, 0.1000]) y v3=tensor([ 0.7071, -0.7071, 0.0000]): tensor(1.5071)
 \end_layout
 
 \end_deeper
@@ -3944,11 +4041,11 @@ Normalizando el resultado de
 \begin_inset Formula 
 \[
 \left[\begin{array}{c}
-\frac{59.90}{60.74}\\
-\frac{10.05}{60.74}
+\frac{-0.09}{0.27}\\
+\frac{0.26}{0.27}
 \end{array}\right]=\left[\begin{array}{c}
-0.986170\\
-0.165459
+-0.333333\\
+0.962962
 \end{array}\right]
 \]
 
@@ -3959,18 +4056,18 @@ Normalizando el resultado de
 
 \begin_layout Standard
 Normalizando el resultado de 
-\begin_inset Formula $\nabla f_{(6.2,7)}$
+\begin_inset Formula $\nabla f_{(0,4.3)}$
 \end_inset
 
 :
 \begin_inset Formula 
 \[
 \left[\begin{array}{c}
-\frac{517.55}{1216.24}\\
-\frac{1100.63}{1216.24}
+0\\
+\frac{0.46}{0.46}
 \end{array}\right]=\left[\begin{array}{c}
-0.425532\\
-0.904944
+0\\
+1
 \end{array}\right]
 \]
 
@@ -3987,8 +4084,8 @@ H_{f(x,y)}=\left[\begin{array}{cc}
 \frac{\delta f}{\delta x^{2}} & \frac{\delta f}{\delta x\delta y}\\
 \frac{\delta f}{\delta y\delta x} & \frac{\delta f}{\delta y^{2}}
 \end{array}\right]=\left[\begin{array}{cc}
-e^{x}+4 & 0\\
-0 & e^{y}
+\frac{2(x^{2}-y^{2})}{(x^{2}+y^{2})^{2}} & \frac{-4xy}{(x^{2}+y^{2})^{2}}\\
+\frac{-4xy}{(x^{2}+y^{2})^{2}} & \frac{2(x^{2}-y^{2})}{(x^{2}+y^{2})^{2}}
 \end{array}\right]
 \]
 

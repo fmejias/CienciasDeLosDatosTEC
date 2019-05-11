@@ -989,11 +989,40 @@ Usando Python grafique los siguientes vectores
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float figure
+placement H
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-FALTA ADJUNTAR LA GRAFICA DE LOS VECTORES!
+\align center
+\begin_inset Graphics
+	filename Images/Ejercicio2_Vectores.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfica de los vectores 
+\begin_inset Formula $\vec{v}_{1},\vec{v}_{2},\vec{v}_{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -1197,8 +1226,37 @@ y
 Pytorch
 \series default
 .
+\begin_inset VSpace 3mm
+\end_inset
+
+
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+Salida de Jupyter:
+\end_layout
+
+\begin_layout Standard
+a) Angulo en grados entre v1=tensor([-0.3000, 0.8000, 0.1000]) y v2=tensor([0.5000,
+ 0.2000, 0.4000]): tensor(85.0293)
+\end_layout
+
+\begin_layout Standard
+b) Angulo en grados entre v2=tensor([0.5000, 0.2000, 0.4000]) y v3=tensor([
+ 0.7071, -0.7071, 0.0000]): tensor(71.5650)
+\end_layout
+
+\begin_layout Standard
+c) Angulo en grados entre v1=tensor([-0.3000, 0.8000, 0.1000]) y v3=tensor([
+ 0.7071, -0.7071, 0.0000]): tensor(154.7150)
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Calcule la distancia en 
 \lang english
@@ -1249,8 +1307,179 @@ y
 Pytorch
 \series default
 .
+\begin_inset VSpace 3mm
+\end_inset
+
+
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+Salida de Jupyter:
+\end_layout
+
+\begin_layout Enumerate
+Distancia entre los vectores 
+\begin_inset Formula $\vec{v}_{1}$
+\end_inset
+
+y 
+\begin_inset Formula $\vec{v}_{2}$
+\end_inset
+
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Distancia Euclideana entre v1=tensor([-0.3000, 0.8000, 0.1000]) y v2=tensor([0.5000,
+ 0.2000, 0.4000]): tensor(1.0440)
+\end_layout
+
+\begin_layout Standard
+Distancia Euclideana usando torch.norm entre v1=tensor([-0.3000, 0.8000, 0.1000])
+ y v2=tensor([0.5000, 0.2000, 0.4000]): tensor(1.0440)
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Distancia Manhattan entre v1=tensor([-0.3000, 0.8000, 0.1000]) y v2=tensor([0.5000,
+ 0.2000, 0.4000]): tensor(1.7000)
+\end_layout
+
+\begin_layout Standard
+Distancia Manhattan usando torch.norm entre v1=tensor([-0.3000, 0.8000, 0.1000])
+ y v2=tensor([0.5000, 0.2000, 0.4000]): tensor(1.7000)
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Distancia Infinita entre v1=tensor([-0.3000, 0.8000, 0.1000]) y v2=tensor([0.5000,
+ 0.2000, 0.4000]): tensor(0.8000)
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Distancia entre los vectores 
+\begin_inset Formula $\vec{v}_{2}$
+\end_inset
+
+y 
+\begin_inset Formula $\vec{v}_{3}$
+\end_inset
+
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Distancia Euclideana entre v2=tensor([0.5000, 0.2000, 0.4000]) y v3=tensor([
+ 0.7071, -0.7071, 0.0000]): tensor(1.0128)
+\end_layout
+
+\begin_layout Standard
+Distancia Euclideana usando torch.norm entre v2=tensor([0.5000, 0.2000, 0.4000])
+ y v3=tensor([ 0.7071, -0.7071, 0.0000]): tensor(1.0128)
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Distancia Manhattan entre v2=tensor([0.5000, 0.2000, 0.4000]) y v3=tensor([
+ 0.7071, -0.7071, 0.0000]): tensor(1.5142)
+\end_layout
+
+\begin_layout Standard
+Distancia Manhattan usando torch.norm entre v2=tensor([0.5000, 0.2000, 0.4000])
+ y v3=tensor([ 0.7071, -0.7071, 0.0000]): tensor(1.5142)
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Distancia Infinita entre v2=tensor([0.5000, 0.2000, 0.4000]) y v3=tensor([
+ 0.7071, -0.7071, 0.0000]): tensor(0.9071)
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Distancia entre los vectores 
+\begin_inset Formula $\vec{v}_{1}$
+\end_inset
+
+y 
+\begin_inset Formula $\vec{v}_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Distancia Euclideana entre v1=tensor([-0.3000, 0.8000, 0.1000]) y v3=tensor([
+ 0.7071, -0.7071, 0.0000]): tensor(1.8154)
+\end_layout
+
+\begin_layout Standard
+Distancia Euclideana usando torch.norm entre v1=tensor([-0.3000, 0.8000, 0.1000])
+ y v3=tensor([ 0.7071, -0.7071, 0.0000]): tensor(1.8154)
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Distancia Manhattan entre v1=tensor([-0.3000, 0.8000, 0.1000]) y v3=tensor([
+ 0.7071, -0.7071, 0.0000]): tensor(2.6142)
+\end_layout
+
+\begin_layout Standard
+Distancia Manhattan usando torch.norm entre v1=tensor([-0.3000, 0.8000, 0.1000])
+ y v3=tensor([ 0.7071, -0.7071, 0.0000]): tensor(2.6142)
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Distancia Infinita entre v1=tensor([-0.3000, 0.8000, 0.1000]) y v3=tensor([
+ 0.7071, -0.7071, 0.0000]): tensor(1.5071)
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Propiedades del producto punto: demuestre lo siguiente.
@@ -1458,6 +1687,48 @@ ad del producto punto.
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+La salida de la demostración en Python es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Ejercicio2_2_SalidaJupyter.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Salida de la demostración de conmutatividad y asociatividad en Python
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Section
 La distancia de Minkowski como índice de error
@@ -3874,6 +4145,128 @@ e^{x}+4 & 0\\
 
  y 
 \begin_inset Formula $P_{1}=\left(0,4.3\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Calculando el vector gradiente manualmente:
+\begin_inset Formula 
+\[
+\nabla f=\frac{\delta f}{\delta x}\hat{i}+\frac{\delta f}{\delta y}\hat{j}=(\frac{2x}{x^{2}+y^{2}})\hat{i}+(\frac{2y}{x^{2}+y^{2}})\hat{j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Evaluando en 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\nabla f_{(-2.4,6.7)}=(-0.09)\hat{i}+(0.26)\hat{j}
+\]
+
+\end_inset
+
+Evaluando en 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\nabla f_{(0,4.3)}=(0)\hat{i}+(0.46)\hat{j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Calculando la magnitud de los gradientes evaluados:
+\begin_inset Formula 
+\[
+\left\Vert \nabla f_{(-2.4,6.7)}\right\Vert =\sqrt{(-0.09)^{2}+(0.26)^{2}}=0.27
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\Vert \nabla f_{(0,4.3)}\right\Vert =\sqrt{(0)^{2}+(0.46)^{2}}=0.46
+\]
+
+\end_inset
+
+Normalizando el resultado de 
+\begin_inset Formula $\nabla f_{(-2.4,6.7)}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left[\begin{array}{c}
+\frac{-0.09}{0.27}\\
+\frac{0.26}{0.27}
+\end{array}\right]=\left[\begin{array}{c}
+-0.333333\\
+0.962962
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Normalizando el resultado de 
+\begin_inset Formula $\nabla f_{(0,4.3)}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\left[\begin{array}{c}
+0\\
+\frac{0.46}{0.46}
+\end{array}\right]=\left[\begin{array}{c}
+0\\
+1
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La matriz Hessiana sería:
+\begin_inset Formula 
+\[
+H_{f(x,y)}=\left[\begin{array}{cc}
+\frac{\delta f}{\delta x^{2}} & \frac{\delta f}{\delta x\delta y}\\
+\frac{\delta f}{\delta y\delta x} & \frac{\delta f}{\delta y^{2}}
+\end{array}\right]=\left[\begin{array}{cc}
+\frac{2(x^{2}-y^{2})}{(x^{2}+y^{2})^{2}} & \frac{-4xy}{(x^{2}+y^{2})^{2}}\\
+\frac{-4xy}{(x^{2}+y^{2})^{2}} & \frac{2(x^{2}-y^{2})}{(x^{2}+y^{2})^{2}}
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\begin_inset VSpace 3mm
 \end_inset
 
 
