@@ -1768,7 +1768,7 @@ FALTA ADJUNTAR CALCULO MATRICIAL CON PYTORCH Y EXPLICAR!
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2335,11 +2335,60 @@ Primer conjunto de muestras
 \end_layout
 
 \begin_layout Standard
+Resultados de Python para el Primer Set de Datos: 
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\lang english
+
+\begin_inset Formula 
+\[
+MAE=2.0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+RMSE=2.0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sigma_{MAE}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sigma_{RMSE}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2899,6 +2948,55 @@ Segundo conjunto de muestras
 \end_inset
 
 
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Resultados de Python para el Segundo Set de Datos: 
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\lang english
+
+\begin_inset Formula 
+\[
+MAE=2.0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+RMSE=2.2361
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sigma_{MAE}=1.0541
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sigma_{RMSE}=4.2164
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset VSpace 3mm
 \end_inset
 
@@ -3467,6 +3565,80 @@ Tercer conjunto de muestras
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Resultados de Python para el Tercer Set de Datos: 
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\lang english
+
+\begin_inset Formula 
+\[
+MAE=2.0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+RMSE=6.3246
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sigma_{MAE}=6.3246
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sigma_{RMSE}=126.4911
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Al calcular tanto el MAE como el RMSE en los tres conjuntos de datos se
+ observa como el MAE es constante con un valor de 2.0 y el RMSE aumenta conforme
+ aumenta la variabilidad de las magnitudes de error.
+ Esto último se observa analizando la magnitud de los errores en los tres
+ conjuntos de datos; por ejemplo, en el primer set de datos el error es
+ únicamente de 2, mientras que en el segundo set los errores tienen un valor
+ de 1 y 3, sin embargo, el tercer set de datos presenta una magnitud de
+ error de 20, y esto es lo que hace que se dispare el RMSE.
+ Por lo tanto, se observa que el RMSE no necesariamente aumenta con la varianza
+ de los errores, sino que aumenta con la variabilidad de las magnitudes
+ de error.
+ Por último, el MAE es adecuado para describir errores distribuidos uniformement
+e, mientras que el RMSE es una mejor medida para modelos que presenten una
+ distribución normal.
+\begin_inset VSpace 3mm
 \end_inset
 
 
