@@ -1744,16 +1744,6 @@ Explique la diferencia entre las métricas, analizándolo desde el punto de
  datos pendientes (?) en la tabla 1.
  Realice el cálculo de forma matricial, prescindiendo al máximo de estructuras
  de repetición.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-FALTA ADJUNTAR CALCULO MATRICIAL CON PYTORCH Y EXPLICAR!
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -3704,11 +3694,37 @@ para la función
 
  y codominio en ).
  Grafique ambos planos en Pytorch.
-\begin_inset Note Note
+\begin_inset Float figure
+placement H
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-FALTA ADJUNTAR LA GRAFICA DE LOS PLANOS!
+\align center
+\begin_inset Graphics
+	filename Images/Ejercicio4_Planos.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfica de los planos
+\begin_inset Formula $f_{1},f_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4035,16 +4051,6 @@ Para cada una de las siguientes funciones multivariable: grafique su superficie,
  Además calcule la matriz Hessiana.
  En general, investigue ¿qué indica la magnitud del vector gradiente y la
  matriz Hessiana?
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-FALTA ADJUNTAR LA GRAFICA DEL VECTOR UNITARIO!
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -4163,6 +4169,38 @@ H_{f(x,y)}=\left[\begin{array}{cc}
 
 
 \begin_inset VSpace 3mm
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Ejercicio4_Gradientes_a.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfica de la primera función multivariable
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -4305,6 +4343,38 @@ e^{x}+4 & 0\\
 \end_inset
 
 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Ejercicio4_Gradientes_b.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfica de la segunda función multivariable
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -4440,6 +4510,38 @@ H_{f(x,y)}=\left[\begin{array}{cc}
 
 
 \begin_inset VSpace 3mm
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Images/Ejercicio4_Gradientes_b.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfica de la tercera función multivariable
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
