@@ -385,7 +385,7 @@ por lo tanto el sistema es lineal.
 
 \end_deeper
 \begin_layout Enumerate
-\begin_inset Formula $g\left(t\right)=máx(u(t))\,$
+\begin_inset Formula $g\left(t\right)=\max(u(t))\,$
 \end_inset
 
 
@@ -947,7 +947,7 @@ por lo tanto no cumple la superposición y el sistema no es lineal.
 d.1.) Para que el sistema sea lineal se debe agregar un elemento más al vector
  w, el elemento debe tener un valor de uno.
  Adicionalmente, los arreglos de entrada deben contener un elemento más
- con valor de b, con esto se elimina b de la ecuación original.
+ con valor b, con esto se elimina b de la ecuación original.
  
 \end_layout
 
@@ -984,7 +984,7 @@ Usando Python grafique los siguientes vectores
 \end{bmatrix}$
 \end_inset
 
-, usando la función quiver3.
+, usando la función quiver.
 \end_layout
 
 \begin_deeper
@@ -1037,29 +1037,319 @@ Escriba los vectores anteriores en términos de los vectores unitarios
 \end_inset
 
 
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Standard
-\begin_inset Formula $\vec{v}_{1}=-0.3\hat{i}+0.8\hat{j}+0.1\hat{k}$
+
+\begin_inset VSpace 3mm
 \end_inset
 
 
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
-\begin_inset Formula $\vec{v}_{2}=0.5\hat{i}+0.2\hat{j}+0.4\hat{k}$
+b.1)Hay que calcular el vector unitario 
+\begin_inset Formula $\hat{i}\text{=\vec{\frac{v_{1}}{\left\Vert \overrightarrow{v_{1}}\right\Vert }} }$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Se calcula la 
+\begin_inset Formula $\left\Vert \overrightarrow{v_{1}}\right\Vert $
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\lang english
+
+\begin_inset Formula 
+\[
+\sqrt{\sum_{i=1}^{2}|v_{i}|^{2}}=\sqrt{(-0.3)^{2}+(0.8)^{2}+(0.1)^{2}}=\sqrt{0.09+0.64+0.01}=\sqrt{0.74}\sim0.86
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\lang spanish
+ Se calcula 
+\begin_inset Formula $\vec{\frac{v_{1}}{\left\Vert \overrightarrow{v_{1}}\right\Vert }}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{i}=\begin{bmatrix}\frac{-0.3}{.086}\\
+\frac{0.8}{0.86}\\
+\frac{0.1}{0.86}
+\end{bmatrix}=\begin{bmatrix}-0.35\\
+0.93\\
+0.12
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Entonces 
+\begin_inset Formula 
+\[
+\vec{v}_{1}=0.86\begin{bmatrix}-0.35\\
+0.93\\
+0.12
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+b.2) Hay que calcular el vector unitario 
+\begin_inset Formula $\hat{j}\text{=\vec{\frac{v_{2}}{\left\Vert \overrightarrow{v_{2}}\right\Vert }} }$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Se calcula la 
+\begin_inset Formula $\left\Vert \overrightarrow{v_{2}}\right\Vert $
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\lang english
+
+\begin_inset Formula 
+\[
+\sqrt{\sum_{i=1}^{2}|v_{i}|^{2}}=\sqrt{(0.5)^{2}+(0.2)^{2}+(0.4)^{2}}=\sqrt{0.25+0.04+0.16}=\sqrt{0.45}\sim0.67
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\lang spanish
+
+\begin_inset VSpace 3mm
+\end_inset
+
+ Se calcula 
+\begin_inset Formula $\vec{\frac{v_{2}}{\left\Vert \overrightarrow{v_{2}}\right\Vert }}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{j}=\begin{bmatrix}\frac{0.5}{0.67}\\
+\frac{0.2}{0.67}\\
+\frac{0.4}{0.67}
+\end{bmatrix}=\begin{bmatrix}0.75\\
+0.30\\
+0.60
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Entonces 
+\begin_inset Formula 
+\[
+\vec{v}_{2}=0.67\begin{bmatrix}0.75\\
+0.30\\
+0.60
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+b.3) Hay que calcular el vector unitario 
+\begin_inset Formula $\hat{k}\text{=\vec{\frac{v_{3}}{\left\Vert \overrightarrow{v_{3}}\right\Vert }} }$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Se calcula la 
+\begin_inset Formula $\left\Vert \overrightarrow{v_{3}}\right\Vert $
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\lang english
+
+\begin_inset Formula 
+\[
+\sqrt{\sum_{i=1}^{2}|v_{i}|^{2}}=\sqrt{\left(\frac{1}{\sqrt{2}}\right)^{2}+\left(\frac{-1}{\sqrt{2}}\right)^{2}+(0)^{2}}=\sqrt{0.5+0.5+0}=\sqrt{1}=1
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\lang spanish
+
+\begin_inset VSpace 3mm
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\hat{k}=\vec{v}_{3}=\begin{bmatrix}\frac{1}{\sqrt{2}}\\
+\frac{-1}{\sqrt{2}}\\
+0
+\end{bmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace 3mm
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Formula $\vec{v}_{3}=\frac{1}{\sqrt{2}}i-\frac{1}{\sqrt{2}}\hat{j}+0\hat{k}$
-\end_inset
-
-
-\end_layout
-
+\end_deeper
 \end_deeper
 \begin_layout Enumerate
 Demuestre cuales de los vectores anteriores son unitarios.
