@@ -1119,7 +1119,7 @@ Se calcula la
 \hat{i}=\begin{bmatrix}\frac{-0.3}{.086}\\
 \frac{0.8}{0.86}\\
 \frac{0.1}{0.86}
-\end{bmatrix}=\begin{bmatrix}0.35\\
+\end{bmatrix}=\begin{bmatrix}-0.35\\
 0.93\\
 0.12
 \end{bmatrix}
@@ -1134,7 +1134,7 @@ Se calcula la
 Entonces 
 \begin_inset Formula 
 \[
-\vec{v}_{1}=0.86\begin{bmatrix}0.35\\
+\vec{v}_{1}=0.86\begin{bmatrix}-0.35\\
 0.93\\
 0.12
 \end{bmatrix}
@@ -4807,7 +4807,7 @@ H_{f(x,y)}=\left[\begin{array}{cc}
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4835,6 +4835,23 @@ Gráfica de la tercera función multivariable
 \end_inset
 
 
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es importante indicar que el vector gradiente denota la dirección para la
+ cual una superficie definida por la función 
+\begin_inset Formula $f$
+\end_inset
+
+ cambia, y la magnitud del vector gradiente es la máxima razón de cambio
+ de la función en el punto del gradiente.
+ Además, la matriz Hessiana encuentra su uso principal en algunos algoritmos
+ de aprendizaje automático, y se utiliza para encontrar el máximo y el mínimo
+ de una curva o la aproximación de una función multivariable.
 \end_layout
 
 \end_deeper

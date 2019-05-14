@@ -4835,10 +4835,6 @@ Gráfica de la tercera función multivariable
 \end_inset
 
 
-\begin_inset VSpace 3mm
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -4849,9 +4845,7 @@ Es importante indicar que el vector gradiente denota la dirección para la
 
  cambia, y la magnitud del vector gradiente es la máxima razón de cambio
  de la función en el punto del gradiente.
- Además, la matriz Hessiana encuentra su uso principal en algunos algoritmos
- de aprendizaje automático, y se utiliza para encontrar el máximo y el mínimo
- de una curva.
+ Además, la matriz Hessiana 
 \end_layout
 
 \end_deeper
