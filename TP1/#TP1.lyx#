@@ -960,7 +960,7 @@ Si:
 
 \begin_inset Formula 
 \[
-\Rightarrow\overrightarrow{b}^{T}A\overrightarrow{x}
+\Rightarrow A\overrightarrow{x}\overrightarrow{b}^{T}
 \]
 
 \end_inset
@@ -968,7 +968,7 @@ Si:
 
 \begin_inset Formula 
 \[
-\therefore\overrightarrow{x}^{T}A^{T}A\overrightarrow{x}-2\overrightarrow{b}^{T}A\overrightarrow{x}+\overrightarrow{b}^{T}\overrightarrow{b}+\sqrt{\overrightarrow{x}^{T}\cdot\overrightarrow{x}}
+\therefore\overrightarrow{x}^{T}A^{T}A\overrightarrow{x}-2\overrightarrow{b}^{T}A\overrightarrow{x}-\overrightarrow{b}^{T}A\overrightarrow{x}+\overrightarrow{b}^{T}\overrightarrow{b}+\sqrt{\overrightarrow{x}^{T}\cdot\overrightarrow{x}}
 \]
 
 \end_inset
