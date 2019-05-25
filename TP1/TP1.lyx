@@ -734,6 +734,161 @@ Y para que (2) se cumpla, siguiendo la propiedad (1):
 \end_layout
 
 \begin_layout Section
+Igualdad matriz simétrica (20 puntos)
+\end_layout
+
+\begin_layout Standard
+Muestre con un ejemplo numérico que para un vector 
+\begin_inset Formula $\overrightarrow{x}\in\mathbb{R}^{n}$
+\end_inset
+
+ y una matriz simétrica 
+\begin_inset Formula $A\in\mathbb{R}^{nxn}$
+\end_inset
+
+:
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\lang english
+
+\begin_inset Formula 
+\[
+(\overrightarrow{x}^{T}A\overrightarrow{x})^{T}=(\overrightarrow{x}^{T}A\overrightarrow{x})
+\]
+
+\end_inset
+
+
+\lang spanish
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Utilizando: 
+\begin_inset Formula $\overrightarrow{x}=\left[\begin{array}{c}
+1\\
+2
+\end{array}\right]$
+\end_inset
+
+, 
+\begin_inset Formula $A=\left[\begin{array}{cc}
+1 & 2\\
+2 & 2
+\end{array}\right]$
+\end_inset
+
+,
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Demostrando el lado izquierdo de la igualdad,
+\lang english
+
+\begin_inset Formula 
+\[
+\overrightarrow{x}^{T}A^{T}=\left[\begin{array}{cc}
+1 & 2\end{array}\right]\cdot\left[\begin{array}{cc}
+1 & 2\\
+2 & 2
+\end{array}\right]=\left[\begin{array}{cc}
+5 & 6\end{array}\right]
+\]
+
+\end_inset
+
+
+\lang spanish
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\lang english
+
+\begin_inset Formula 
+\[
+\overrightarrow{x}^{T}A^{T}\overrightarrow{x}=\left[\begin{array}{cc}
+5 & 6\end{array}\right]\cdot\left[\begin{array}{c}
+1\\
+2
+\end{array}\right]=17
+\]
+
+\end_inset
+
+
+\lang spanish
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Demostrando el lado derecho de la igualdad,
+\lang english
+
+\begin_inset Formula 
+\[
+\overrightarrow{x}^{T}A=\left[\begin{array}{cc}
+1 & 2\end{array}\right]\cdot\left[\begin{array}{cc}
+1 & 2\\
+2 & 2
+\end{array}\right]=\left[\begin{array}{cc}
+5 & 6\end{array}\right]
+\]
+
+\end_inset
+
+
+\lang spanish
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\lang english
+
+\begin_inset Formula 
+\[
+\overrightarrow{x}^{T}A\overrightarrow{x}=\left[\begin{array}{cc}
+5 & 6\end{array}\right]\cdot\left[\begin{array}{c}
+1\\
+2
+\end{array}\right]=17
+\]
+
+\end_inset
+
+
+\lang spanish
+
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\therefore$
+\end_inset
+
+Se cumple la igualdad.
+\end_layout
+
+\begin_layout Section
 Ecuación matricial (20 puntos)
 \end_layout
 
