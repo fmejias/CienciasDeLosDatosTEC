@@ -1,0 +1,115 @@
+{
+    "numero_caja": "4",
+    "compras": [
+        [
+            {
+                "nombre": "coliflor",
+                "cantidad": "5",
+                "precio_unitario": "145"
+            }
+        ],
+        [
+            {
+                "nombre": "Fideos",
+                "cantidad": "2",
+                "precio_unitario": "1500"
+            },
+            {
+                "nombre": "Cepillo de dientes",
+                "cantidad": "2",
+                "precio_unitario": "850"
+            }
+        ],
+        [
+            {
+                "nombre": "Carne adobada",
+                "cantidad": "5",
+                "precio_unitario": "3000"
+            },
+            {
+                "nombre": "Salchicha",
+                "cantidad": "10",
+                "precio_unitario": "160"
+            },
+            {
+                "nombre": "Pollo adobado",
+                "cantidad": "5",
+                "precio_unitario": "2000"
+            }
+        ],
+        [
+            {
+                "nombre": "Papel higienico",
+                "cantidad": "2",
+                "precio_unitario": "700"
+            }
+        ],
+        [
+            {
+                "nombre": "Hilo Dental",
+                "cantidad": "1",
+                "precio_unitario": "360"
+            },
+            {
+                "nombre": "Shampoo",
+                "cantidad": "2",
+                "precio_unitario": "560"
+            }
+        ],
+        [
+            {
+                "nombre": "Pringles",
+                "cantidad": "1",
+                "precio_unitario": "870"
+            },
+            {
+                "nombre": "Picaritas",
+                "cantidad": "3",
+                "precio_unitario": "5000"
+            },
+            {
+                "nombre": "Tronaditas",
+                "cantidad": "4",
+                "precio_unitario": "490"
+            }
+        ],
+        [
+            {
+                "nombre": "Chocoleta",
+                "cantidad": "2",
+                "precio_unitario": "1000"
+            },
+            {
+                "nombre": "Cremoleta",
+                "cantidad": "6",
+                "precio_unitario": "1100"
+            },
+            {
+                "nombre": "Helado Cero Grados",
+                "cantidad": "3",
+                "precio_unitario": "1200"
+            }
+        ],
+        [
+            {
+                "nombre": "Jalea de Guayaba",
+                "cantidad": "1",
+                "precio_unitario": "3000"
+            }
+        ],
+        [
+            {
+                "nombre": "Nutella",
+                "cantidad": "2",
+                "precio_unitario": "1400"
+            }
+        ],
+        [
+            {
+                "nombre": "Azucar",
+                "cantidad": "3",
+                "precio_unitario": "1000"
+            }
+        ]
+    ]
+}

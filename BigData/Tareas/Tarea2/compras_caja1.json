@@ -1,0 +1,155 @@
+{
+    "numero_caja": "1",
+    "compras": [
+        [
+            {
+                "nombre": "manzana",
+                "cantidad": "3",
+                "precio_unitario": "22"
+            },
+            {
+                "nombre": "brocoli",
+                "cantidad": "2",
+                "precio_unitario": "33"
+            }
+        ],
+        [
+            {
+                "nombre": "aguacate",
+                "cantidad": "1",
+                "precio_unitario": "5000"
+            }
+        ],
+        [
+            {
+                "nombre": "pavo",
+                "cantidad": "1",
+                "precio_unitario": "15000"
+            },
+            {
+                "nombre": "papas",
+                "cantidad": "10",
+                "precio_unitario": "100"
+            },
+            {
+                "nombre": "limon",
+                "cantidad": "5",
+                "precio_unitario": "50"
+            }
+        ],
+        [
+            {
+                "nombre": "ciruelas",
+                "cantidad": "4",
+                "precio_unitario": "200"
+            },
+            {
+                "nombre": "durazno",
+                "cantidad": "3",
+                "precio_unitario": "250"
+            },
+            {
+                "nombre": "fresas",
+                "cantidad": "5",
+                "precio_unitario": "300"
+            }
+        ],
+        [
+            {
+                "nombre": "Mejitos",
+                "cantidad": "2",
+                "precio_unitario": "560"
+            },
+            {
+                "nombre": "FrescoLeche",
+                "cantidad": "3",
+                "precio_unitario": "430"
+            },
+            {
+                "nombre": "Leche",
+                "cantidad": "5",
+                "precio_unitario": "700"
+            }
+        ],
+        [
+            {
+                "nombre": "Pringles",
+                "cantidad": "1",
+                "precio_unitario": "870"
+            },
+            {
+                "nombre": "Cebolla",
+                "cantidad": "2",
+                "precio_unitario": "140"
+            },
+            {
+                "nombre": "Apio",
+                "cantidad": "1",
+                "precio_unitario": "70"
+            },
+            {
+                "nombre": "Pepino",
+                "cantidad": "1",
+                "precio_unitario": "160"
+            }
+        ],
+        [
+            {
+                "nombre": "Picaritas",
+                "cantidad": "1",
+                "precio_unitario": "5000"
+            },
+            {
+                "nombre": "Chocolate",
+                "cantidad": "3",
+                "precio_unitario": "250"
+            }
+        ],
+        [
+            {
+                "nombre": "Tronaditas",
+                "cantidad": "1",
+                "precio_unitario": "490"
+            }
+        ],
+        [
+            {
+                "nombre": "Chocoleta",
+                "cantidad": "1",
+                "precio_unitario": "1000"
+            },
+            {
+                "nombre": "Cremoleta",
+                "cantidad": "2",
+                "precio_unitario": "1100"
+            },
+            {
+                "nombre": "Helado Cero Grados",
+                "cantidad": "1",
+                "precio_unitario": "1200"
+            },
+            {
+                "nombre": "Helado Deleite",
+                "cantidad": "1",
+                "precio_unitario": "3000"
+            }
+        ],
+        [
+            {
+                "nombre": "Frijoles Molidos",
+                "cantidad": "1",
+                "precio_unitario": "5000"
+            },
+            {
+                "nombre": "Pan Bimbo",
+                "cantidad": "1",
+                "precio_unitario": "5000"
+            },
+            {
+                "nombre": "Mantequilla de Maní",
+                "cantidad": "1",
+                "precio_unitario": "5000"
+            }
+        ]
+    ]
+}
